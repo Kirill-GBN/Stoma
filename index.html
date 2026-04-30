@@ -1,0 +1,1640 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Даймонд | Стоматологический центр</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/hero.css">
+    <link rel="stylesheet" href="css/blocks/stats.css">
+    <link rel="stylesheet" href="css/blocks/doctors.css">
+    <link rel="stylesheet" href="css/blocks/finance.css">
+    <link rel="stylesheet" href="css/blocks/pricing.css">
+    <link rel="stylesheet" href="css/blocks/license.css">
+    <link rel="stylesheet" href="css/blocks/promo.css">
+    <link rel="stylesheet" href="css/blocks/rating.css">
+    <link rel="stylesheet" href="css/blocks/faq.css">
+    <link rel="stylesheet" href="css/blocks/services.css">
+    <link rel="stylesheet" href="css/blocks/transformations.css">
+    <link rel="stylesheet" href="css/blocks/consultation.css">
+    <link rel="stylesheet" href="css/blocks/map.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-inner">
+          <div class="header__top-left">
+            <a class="header__logo" href="/" aria-label="Даймонд, перейти на главную">
+              <img class="header__logo-image" src="assets/icons/logo.svg" width="168" height="50" alt="Даймонд стоматологический центр">
+            </a>
+
+            <address class="header__address">
+              <img class="header__icon" src="assets/icons/icon-pin.svg" width="18" height="18" alt="" aria-hidden="true">
+              <span>г. Красногорск, Ильинский<br>бульвар, 2 | м. Мякинино</span>
+            </address>
+          </div>
+
+          <div class="header__top-right">
+            <div class="header__contacts">
+              <a class="header__phone" href="tel:+74991107719">
+                <img class="header__icon" src="assets/icons/icon-phone.svg" width="18" height="18" alt="" aria-hidden="true">
+                <span>+7 499 110-77-19</span>
+              </a>
+              <span class="header__schedule">Ежедневно с 9:00 до 20:00</span>
+            </div>
+
+            <button class="header__burger" type="button" aria-expanded="false" aria-controls="header-menu" aria-label="Открыть меню">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+
+            <div class="header__actions">
+              <a class="button button--outline" href="#accessibility">Версия для слабовидящих</a>
+              <a class="button button--primary" href="#appointment">Записаться на прием</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__bottom-inner">
+          <nav class="header__nav" aria-label="Главная навигация">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="#services">Услуги</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#clinic">О клинике</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#doctors">Врачи</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#offers">Акции</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#prices">Цены</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#reviews">Отзывы</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a class="header__promo header__promo--desktop" href="#implant">Имплантация за 3750 ₽/мес.</a>
+          <a class="header__promo header__promo--mobile" href="#implant">Имплант за 3750₽/мес.</a>
+          <a class="button button--primary header__mobile-appointment" href="#appointment">Записаться на прием</a>
+        </div>
+      </div>
+
+      <div class="header__menu" id="header-menu" aria-hidden="true">
+        <div class="header__menu-panel" role="dialog" aria-modal="true" aria-label="Меню сайта">
+          <div class="header__menu-head">
+            <img class="header__menu-logo" src="assets/icons/logo.svg" width="120" height="36" alt="Даймонд стоматологический центр">
+            <button class="header__menu-close" type="button" aria-label="Закрыть меню">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <nav class="header__menu-nav" aria-label="Мобильная навигация">
+            <ul class="header__menu-list">
+              <li><a class="header__menu-link" href="#services">Услуги</a></li>
+              <li><a class="header__menu-link" href="#clinic">О клинике</a></li>
+              <li><a class="header__menu-link" href="#doctors">Врачи</a></li>
+              <li><a class="header__menu-link" href="#offers">Акции</a></li>
+              <li><a class="header__menu-link" href="#prices">Цены</a></li>
+              <li><a class="header__menu-link" href="#reviews">Отзывы</a></li>
+              <li><a class="header__menu-link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <address class="header__menu-address">
+            <img class="header__icon" src="assets/icons/icon-pin.svg" width="18" height="18" alt="" aria-hidden="true">
+            <span>г. Красногорск, Ильинский бульвар, 2 | м. Мякинино</span>
+          </address>
+
+          <a class="button button--outline header__menu-accessibility" href="#accessibility">Версия для слабовидящих</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <!-- ACF: hero_title -->
+            <h1 class="hero__title" id="hero-title">Бесплатная<br>консультация</h1>
+
+            <!-- ACF: hero_features -->
+            <ul class="hero__features">
+              <li class="hero__feature">
+                <img class="hero__feature-icon" src="assets/icons/icon-check.svg" width="20" height="20" alt="" aria-hidden="true">
+                <span>ИИ-диагностика Diagnocat</span>
+              </li>
+              <li class="hero__feature">
+                <img class="hero__feature-icon" src="assets/icons/icon-check.svg" width="20" height="20" alt="" aria-hidden="true">
+                <span>3D - снимок зубов (КТ)</span>
+              </li>
+              <li class="hero__feature">
+                <img class="hero__feature-icon" src="assets/icons/icon-check.svg" width="20" height="20" alt="" aria-hidden="true">
+                <span>Составление плана лечения</span>
+              </li>
+            </ul>
+
+            <!-- ACF: hero_appointment_label, hero_appointment_value -->
+            <div class="hero__appointment">
+              <span class="hero__appointment-label">Ближайшее время записи на консультацию:</span>
+              <time class="hero__appointment-value" datetime="2026-02-20T08:00">Завтра, 20 февраля, в 8:00</time>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <!-- ACF: hero_image -->
+            <img class="hero__image" src="assets/images/hero-portrait.png" width="1376" height="630" alt="Пациентка стоматологического центра Даймонд">
+
+            <!-- ACF: hero_video -->
+            <button class="hero__video" type="button" aria-label="Посмотреть видео о клинике" data-video-url="#">
+              <span class="hero__video-button" aria-hidden="true">
+                <img src="assets/icons/icon-play.svg" width="50" height="50" alt="">
+              </span>
+              <span class="hero__video-text">
+                <span>Посмотрите видео</span>
+                <span>о нашей клинике!</span>
+              </span>
+            </button>
+          </div>
+
+          <!-- ACF: hero_review -->
+          <blockquote class="hero__review">
+            <p class="hero__review-text">Очень довольна посещением клиники. Врач провёл подробную консультацию, рассказал о всех вариантах лечения и ничего не навязывал. Само лечение прошло быстро и безболезненно. Видно, что работают профессионалы.</p>
+            <footer class="hero__review-footer">
+              <div class="hero__rating-source">
+                <div class="hero__rating" role="img" aria-label="Рейтинг 5 из 5">
+                  <img src="assets/icons/icon-star.svg" width="27" height="27" alt="" aria-hidden="true">
+                  <img src="assets/icons/icon-star.svg" width="27" height="27" alt="" aria-hidden="true">
+                  <img src="assets/icons/icon-star.svg" width="27" height="27" alt="" aria-hidden="true">
+                  <img src="assets/icons/icon-star.svg" width="27" height="27" alt="" aria-hidden="true">
+                  <img src="assets/icons/icon-star.svg" width="27" height="27" alt="" aria-hidden="true">
+                </div>
+                <img class="hero__source-logo" src="assets/icons/logo-yandex-maps.svg" width="92" height="18" alt="Яндекс Карты">
+              </div>
+              <div class="hero__review-author">
+                <cite>Андрей Гармонов</cite>
+                <time datetime="2026-01-29">29 января 2026</time>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="stats" aria-labelledby="stats-title">
+        <div class="stats__inner">
+          <!-- ACF: stats_title -->
+          <h2 class="stats__title" id="stats-title">О нас в цифрах</h2>
+
+          <!-- ACF: stats_items (Repeater) -->
+          <ul class="stats__list">
+            <!-- ACF: stats_items > item 1 -->
+            <li class="stats__card">
+              <p class="stats__value">
+                <span class="stats__value-number"><!-- value_number -->5.0</span>
+                <span class="stats__value-label"><!-- value_label -->рейтинг</span>
+              </p>
+              <p class="stats__caption"><!-- caption -->9730 отзывов</p>
+            </li>
+
+            <!-- ACF: stats_items > item 2 -->
+            <li class="stats__card">
+              <p class="stats__value">
+                <span class="stats__value-number"><!-- value_number -->5.0</span>
+                <span class="stats__value-label"><!-- value_label -->рейтинг</span>
+              </p>
+              <p class="stats__caption"><!-- caption -->9730 отзывов</p>
+            </li>
+
+            <!-- ACF: stats_items > item 3 -->
+            <li class="stats__card">
+              <p class="stats__value">
+                <span class="stats__value-number"><!-- value_number -->5.0</span>
+                <span class="stats__value-label"><!-- value_label -->рейтинг</span>
+              </p>
+              <p class="stats__caption"><!-- caption -->9730 отзывов</p>
+            </li>
+
+            <!-- ACF: stats_items > item 4 -->
+            <li class="stats__card">
+              <p class="stats__value">
+                <span class="stats__value-number"><!-- value_number -->5.0</span>
+                <span class="stats__value-label"><!-- value_label -->рейтинг</span>
+              </p>
+              <p class="stats__caption"><!-- caption -->9730 отзывов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="doctors" id="doctors" aria-labelledby="doctors-title">
+        <div class="doctors__inner">
+          <!-- ACF: doctors_title -->
+          <h2 class="doctors__title" id="doctors-title">Квалифицированные врачи Красногорска со стажем</h2>
+
+          <div class="doctors__layout">
+            <!-- ACF: doctors_list (Relationship на CPT doctor) -->
+            <ul class="doctors__list">
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Егорьев Дмитрий Павлович -->
+                <a class="doctor-card" href="/doctors/egorev-dmitrij-pavlovich">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/egorev.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Егорьев</span>
+                    <span><!-- doctor.first_name -->Дмитрий</span>
+                    <span><!-- doctor.middle_name -->Павлович</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Месропова Кристина Игоревна -->
+                <a class="doctor-card" href="/doctors/mesropova-kristina-igorevna">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/mesropova.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Месропова</span>
+                    <span><!-- doctor.first_name -->Кристина</span>
+                    <span><!-- doctor.middle_name -->Игоревна</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Абышова Сабина Тарлан Кызы -->
+                <a class="doctor-card" href="/doctors/abyshova-sabina-tarlan-kyzy">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/abyshova.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Абышова</span>
+                    <span><!-- doctor.first_name -->Сабина</span>
+                    <span><!-- doctor.middle_name -->Тарлан Кызы</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Хаметова Диана Ифтихаровна -->
+                <a class="doctor-card" href="/doctors/hametova-diana-iftiharovna">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/hametova.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Хаметова</span>
+                    <span><!-- doctor.first_name -->Диана</span>
+                    <span><!-- doctor.middle_name -->Ифтихаровна</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Амерхаджиев Магомед Сайпуддинович -->
+                <a class="doctor-card" href="/doctors/amerhadzhiev-magomed-sajpuddinovich">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/amerhadzhiev.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Амерхаджиев</span>
+                    <span><!-- doctor.first_name -->Магомед</span>
+                    <span><!-- doctor.middle_name -->Сайпуддинович</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Айвазова Диана Александровна -->
+                <a class="doctor-card" href="/doctors/ajvazova-diana-aleksandrovna">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/aivazova.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Айвазова</span>
+                    <span><!-- doctor.first_name -->Диана</span>
+                    <span><!-- doctor.middle_name -->Александровна</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Коновалова Ильнура Рафаэльевна -->
+                <a class="doctor-card" href="/doctors/konovalova-ilnura-rafaelevna">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/konovalova.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Коновалова</span>
+                    <span><!-- doctor.first_name -->Ильнура</span>
+                    <span><!-- doctor.middle_name -->Рафаэльевна</span>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="doctors__card">
+                <!-- ACF/CPT doctor: Могилянская Наталия Юрьевна -->
+                <a class="doctor-card" href="/doctors/mogilyanskaya-nataliya-yurevna">
+                  <div class="doctor-card__photo">
+                    <img src="assets/images/doctors/mogilyanskaya.png" width="284" height="270" alt="" loading="lazy">
+                  </div>
+                  <h3 class="doctor-card__name">
+                    <span><!-- doctor.last_name -->Могилянская</span>
+                    <span><!-- doctor.first_name -->Наталия</span>
+                    <span><!-- doctor.middle_name -->Юрьевна</span>
+                  </h3>
+                </a>
+              </li>
+            </ul>
+
+            <!-- ACF: doctors_featured (Relationship на одного doctor) + doctors_video -->
+            <div class="doctors__featured">
+              <div class="doctors__video">
+                <button class="doctors__video-button" type="button" aria-label="Воспроизвести видео о клинике">
+                  <img class="doctors__video-poster" src="assets/images/clinic-poster.png" width="1226" height="778" alt="" loading="lazy">
+                  <span class="doctors__video-overlay" aria-hidden="true"></span>
+                  <span class="doctors__video-play" aria-hidden="true">
+                    <img src="assets/icons/icon-play-doctors.svg" width="16" height="18" alt="">
+                  </span>
+                </button>
+              </div>
+
+              <div class="doctors__featured-info">
+                <h3 class="doctors__featured-name"><!-- doctors_featured.name -->Егорьев Дмитрий Павлович</h3>
+                <p class="doctors__featured-bio"><!-- doctors_featured.bio_short -->Врач стоматолог-имплантолог-ортопед с опытом работы более 10 лет, специализируется на микропротезировании, ортопедии, владеет эффективными методиками прямой реставрации и отбеливания зубов, а также современными методиками постановки люминиров и виниров.</p>
+              </div>
+            </div>
+
+            <!-- ACF: doctors_button (Group: text + url) -->
+            <a class="doctors__more button button--outline button--with-arrow" href="/doctors">
+              <span><!-- doctors_button.text -->Все врачи</span>
+              <img src="assets/icons/icon-arrow-right.svg" width="14" height="14" alt="" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="finance" id="finance" aria-labelledby="finance-title">
+        <!-- ACF: finance_title -->
+        <h2 class="visually-hidden" id="finance-title">Финансовые услуги</h2>
+
+        <div class="finance__inner">
+          <!-- ACF: finance_items (Repeater) -->
+          <ul class="finance__list">
+            <!-- ACF: finance_items > item 1 -->
+            <li>
+              <!-- url -->
+              <a class="finance-card" id="installment" href="#installment">
+                <div class="finance-card__icon" aria-hidden="true">
+                  <!-- icon -->
+                </div>
+                <h3 class="finance-card__title">
+                  <span><!-- title_line1 -->Лечение</span>
+                  <span><!-- title_line2 -->в рассрочку</span>
+                </h3>
+                <p class="finance-card__caption"><!-- caption -->на срок до 36 месяцев</p>
+              </a>
+            </li>
+
+            <!-- ACF: finance_items > item 2 -->
+            <li>
+              <!-- url -->
+              <a class="finance-card" id="tax-deduction" href="#tax-deduction">
+                <div class="finance-card__icon" aria-hidden="true">
+                  <!-- icon -->
+                </div>
+                <h3 class="finance-card__title">
+                  <span><!-- title_line1 -->Налоговый</span>
+                  <span><!-- title_line2 -->вычет</span>
+                </h3>
+                <p class="finance-card__caption"><!-- caption -->на срок до 36 месяцев</p>
+              </a>
+            </li>
+
+            <!-- ACF: finance_items > item 3 -->
+            <li>
+              <!-- url -->
+              <a class="finance-card" id="gift-cards" href="#gift-cards">
+                <div class="finance-card__icon" aria-hidden="true">
+                  <!-- icon -->
+                </div>
+                <h3 class="finance-card__title">
+                  <span><!-- title_line1 -->Подарочные</span>
+                  <span><!-- title_line2 -->сертификаты</span>
+                </h3>
+                <p class="finance-card__caption"><!-- caption -->на срок до 36 месяцев</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pricing" id="prices" aria-labelledby="pricing-title">
+        <div class="pricing__inner">
+          <!-- ACF: pricing_title -->
+          <h2 class="pricing__title" id="pricing-title">Прайс на услуги</h2>
+
+          <!-- ACF: pricing_intro (optional) -->
+
+          <!-- ACF: pricing_items (Repeater) -->
+          <ul class="pricing__list">
+            <!-- ACF: pricing_items > item 1 -->
+            <li class="price-card">
+              <div class="price-card__main">
+                <h3 class="price-card__name"><!-- name -->Снятие зубной боли</h3>
+              </div>
+              <div class="price-card__price">
+                <p class="price-card__value"><!-- price -->2 000 ₽</p>
+                <p class="price-card__avg">Средняя в Москве: <!-- price_avg -->2500</p>
+              </div>
+            </li>
+
+            <!-- ACF: pricing_items > item 2 -->
+            <li class="price-card">
+              <div class="price-card__main">
+                <h3 class="price-card__name"><!-- name -->Сложное эндодонтическое лечение</h3>
+                <p class="price-card__desc"><!-- description -->извлечение инструмента, лечение 8ок, сложная анатомия зубов</p>
+              </div>
+              <div class="price-card__price">
+                <p class="price-card__value"><!-- price -->20 000 ₽</p>
+                <p class="price-card__avg">Средняя в Москве: <!-- price_avg -->25000</p>
+              </div>
+            </li>
+
+            <!-- ACF: pricing_items > item 3 -->
+            <li class="price-card">
+              <div class="price-card__main">
+                <h3 class="price-card__name"><!-- name -->Лечение поверхностного кариеса</h3>
+              </div>
+              <div class="price-card__price">
+                <p class="price-card__value"><!-- price -->7 000 ₽</p>
+                <p class="price-card__avg">Средняя в Москве: <!-- price_avg -->9500</p>
+              </div>
+            </li>
+
+            <!-- ACF: pricing_items > item 4 -->
+            <li class="price-card">
+              <div class="price-card__main">
+                <h3 class="price-card__name"><!-- name -->Лечение глубокого кариеса с постановкой лечебной прокладки</h3>
+              </div>
+              <div class="price-card__price">
+                <p class="price-card__value"><!-- price -->12 000 ₽</p>
+                <p class="price-card__avg">Средняя в Москве: <!-- price_avg -->16500</p>
+              </div>
+            </li>
+
+            <!-- ACF: pricing_items > item 5 -->
+            <li class="price-card">
+              <div class="price-card__main">
+                <h3 class="price-card__name"><!-- name -->Эстетическая реставрация фронтального зуба</h3>
+              </div>
+              <div class="price-card__price">
+                <p class="price-card__value"><!-- price -->14 000 ₽</p>
+                <p class="price-card__avg">Средняя в Москве: <!-- price_avg -->15000</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- ACF: pricing_disclaimer -->
+          <p class="pricing__disclaimer">* Цены действительны на март 2026 г. Возможна корректировка по результатам осмотра.</p>
+
+          <!-- ACF: pricing_button (Group: text + url) -->
+          <a class="pricing__button button button--accent button--with-arrow" href="/prices">
+            <span><!-- pricing_button.text -->Смотреть весь прайс</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="license" aria-labelledby="license-title">
+        <div class="license__inner">
+          <!-- ACF: license_title -->
+          <h2 class="license__title" id="license-title">Лицензия</h2>
+
+          <!-- ACF: license_documents (Repeater) -->
+          <ul class="license__list">
+            <!-- ACF: license_documents > item 1 -->
+            <li class="license-card">
+              <!-- file -->
+              <a class="license-card__link" href="/docs/license-1.pdf" target="_blank" rel="noopener" aria-label="Открыть документ: лист лицензии 1">
+                <img class="license-card__image" src="assets/images/license/license-1.png" width="600" height="826" alt="" loading="lazy">
+              </a>
+            </li>
+
+            <!-- ACF: license_documents > item 2 -->
+            <li class="license-card">
+              <!-- file -->
+              <a class="license-card__link" href="/docs/license-2.pdf" target="_blank" rel="noopener" aria-label="Открыть документ: лист лицензии 2">
+                <img class="license-card__image" src="assets/images/license/license-2.png" width="600" height="826" alt="" loading="lazy">
+              </a>
+            </li>
+
+            <!-- ACF: license_documents > item 3 -->
+            <li class="license-card">
+              <!-- file -->
+              <a class="license-card__link" href="/docs/license-3.pdf" target="_blank" rel="noopener" aria-label="Открыть документ: лист лицензии 3">
+                <img class="license-card__image" src="assets/images/license/license-3.png" width="600" height="352" alt="" loading="lazy">
+              </a>
+            </li>
+          </ul>
+
+          <!-- ACF: license_button (Group: text + url) -->
+          <a class="license__button button button--outline-light button--with-arrow" href="/documents">
+            <span><!-- license_button.text -->Вся документация</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="promo" id="offers" aria-labelledby="promo-title">
+        <div class="promo__inner">
+          <div class="promo__head">
+            <!-- ACF: promo_title -->
+            <h2 class="promo__title" id="promo-title">Наши акции</h2>
+
+            <div class="promo__nav" role="group" aria-label="Навигация по акциям">
+              <button class="promo__arrow promo__arrow--prev" type="button" aria-label="Предыдущие акции">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <span class="promo__counter" aria-live="polite">
+                <span class="promo__counter-current">1</span>
+                <span class="promo__counter-divider"> / </span>
+                <span class="promo__counter-total">2</span>
+              </span>
+              <button class="promo__arrow promo__arrow--next" type="button" aria-label="Следующие акции">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ACF/CPT: promos (Relationship на CPT promo) -->
+          <ul class="promo__list" tabindex="0" aria-label="Список акций">
+            <!-- CPT promo: post 1 -->
+            <li class="promo-card">
+              <article class="promo-card__article">
+                <div class="promo-card__media">
+                  <img class="promo-card__image" src="assets/images/promo/promo-1.png" width="815" height="449" alt="" loading="lazy">
+                  <span class="promo-card__badge promo-card__badge--time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- "Осталось N д." вычисляется от end_date -->
+                    <span>Осталось 6 д.</span>
+                  </span>
+                  <span class="promo-card__badge promo-card__badge--discount"><!-- discount_percent -->-40%</span>
+                </div>
+                <div class="promo-card__body">
+                  <h3 class="promo-card__title"><!-- title -->Профессиональная чистка зубов</h3>
+                  <p class="promo-card__desc"><!-- description -->Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                  <p class="promo-card__price">
+                    <span class="promo-card__price-current"><!-- price_current -->2 500 ₽</span>
+                    <span class="promo-card__price-old"><!-- price_old -->4 200 ₽</span>
+                  </p>
+                  <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                    <span>Записаться</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- CPT promo: post 2 -->
+            <li class="promo-card">
+              <article class="promo-card__article">
+                <div class="promo-card__media">
+                  <img class="promo-card__image" src="assets/images/promo/promo-2.png" width="2048" height="1126" alt="" loading="lazy">
+                  <span class="promo-card__badge promo-card__badge--time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- "Осталось N д." вычисляется от end_date -->
+                    <span>Осталось 6 д.</span>
+                  </span>
+                  <span class="promo-card__badge promo-card__badge--discount"><!-- discount_percent -->-40%</span>
+                </div>
+                <div class="promo-card__body">
+                  <h3 class="promo-card__title"><!-- title -->Профессиональная чистка зубов</h3>
+                  <p class="promo-card__desc"><!-- description -->Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                  <p class="promo-card__price">
+                    <span class="promo-card__price-current"><!-- price_current -->2 500 ₽</span>
+                    <span class="promo-card__price-old"><!-- price_old -->4 200 ₽</span>
+                  </p>
+                  <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                    <span>Записаться</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- CPT promo: post 3 -->
+            <li class="promo-card">
+              <article class="promo-card__article">
+                <div class="promo-card__media">
+                  <img class="promo-card__image" src="assets/images/promo/promo-3.png" width="1024" height="563" alt="" loading="lazy">
+                  <span class="promo-card__badge promo-card__badge--time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- "Осталось N д." вычисляется от end_date -->
+                    <span>Осталось 6 д.</span>
+                  </span>
+                  <span class="promo-card__badge promo-card__badge--discount"><!-- discount_percent -->-40%</span>
+                </div>
+                <div class="promo-card__body">
+                  <h3 class="promo-card__title"><!-- title -->Профессиональная чистка зубов</h3>
+                  <p class="promo-card__desc"><!-- description -->Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                  <p class="promo-card__price">
+                    <span class="promo-card__price-current"><!-- price_current -->2 500 ₽</span>
+                    <span class="promo-card__price-old"><!-- price_old -->4 200 ₽</span>
+                  </p>
+                  <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                    <span>Записаться</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- CPT promo: post 4 -->
+            <li class="promo-card">
+              <article class="promo-card__article">
+                <div class="promo-card__media">
+                  <img class="promo-card__image" src="assets/images/promo/promo-4.png" width="815" height="449" alt="" loading="lazy">
+                  <span class="promo-card__badge promo-card__badge--time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- "Осталось N д." вычисляется от end_date -->
+                    <span>Осталось 6 д.</span>
+                  </span>
+                  <span class="promo-card__badge promo-card__badge--discount"><!-- discount_percent -->-40%</span>
+                </div>
+                <div class="promo-card__body">
+                  <h3 class="promo-card__title"><!-- title -->Профессиональная чистка зубов</h3>
+                  <p class="promo-card__desc"><!-- description -->Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                  <p class="promo-card__price">
+                    <span class="promo-card__price-current"><!-- price_current -->2 500 ₽</span>
+                    <span class="promo-card__price-old"><!-- price_old -->4 200 ₽</span>
+                  </p>
+                  <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                    <span>Записаться</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- CPT promo: post 5 -->
+            <li class="promo-card">
+              <article class="promo-card__article">
+                <div class="promo-card__media">
+                  <img class="promo-card__image" src="assets/images/promo/promo-5.png" width="2048" height="1126" alt="" loading="lazy">
+                  <span class="promo-card__badge promo-card__badge--time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- "Осталось N д." вычисляется от end_date -->
+                    <span>Осталось 6 д.</span>
+                  </span>
+                  <span class="promo-card__badge promo-card__badge--discount"><!-- discount_percent -->-40%</span>
+                </div>
+                <div class="promo-card__body">
+                  <h3 class="promo-card__title"><!-- title -->Профессиональная чистка зубов</h3>
+                  <p class="promo-card__desc"><!-- description -->Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                  <p class="promo-card__price">
+                    <span class="promo-card__price-current"><!-- price_current -->2 500 ₽</span>
+                    <span class="promo-card__price-old"><!-- price_old -->4 200 ₽</span>
+                  </p>
+                  <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                    <span>Записаться</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- CPT promo: post 6 -->
+            <li class="promo-card">
+              <article class="promo-card__article">
+                <div class="promo-card__media">
+                  <img class="promo-card__image" src="assets/images/promo/promo-6.png" width="1024" height="563" alt="" loading="lazy">
+                  <span class="promo-card__badge promo-card__badge--time">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- "Осталось N д." вычисляется от end_date -->
+                    <span>Осталось 6 д.</span>
+                  </span>
+                  <span class="promo-card__badge promo-card__badge--discount"><!-- discount_percent -->-40%</span>
+                </div>
+                <div class="promo-card__body">
+                  <h3 class="promo-card__title"><!-- title -->Профессиональная чистка зубов</h3>
+                  <p class="promo-card__desc"><!-- description -->Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                  <p class="promo-card__price">
+                    <span class="promo-card__price-current"><!-- price_current -->2 500 ₽</span>
+                    <span class="promo-card__price-old"><!-- price_old -->4 200 ₽</span>
+                  </p>
+                  <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                    <span>Записаться</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rating" id="reviews" aria-labelledby="rating-title">
+        <div class="rating__inner">
+          <header class="rating__head">
+            <!-- ACF: rating_title -->
+            <h2 class="rating__title" id="rating-title">Рейтинг</h2>
+            <!-- ACF: rating_intro -->
+            <p class="rating__intro">Нас рекомендуют 92% наших пациентов, оставляя отзыв на независимых порталах и соцсетях. Клиника не может на них повлиять, поэтому они так ценны для нас.</p>
+          </header>
+
+          <!-- ACF: rating_items (Repeater) -->
+          <ul class="rating__list">
+            <!-- ACF: rating_items > item 1 -->
+            <li class="rating-card">
+              <a class="rating-card__link" href="https://yandex.ru/maps/" target="_blank" rel="noopener" aria-label="Перейти на страницу клиники в Яндекс Картах">
+                <img class="rating-card__source" src="assets/icons/logo-yandex.svg" width="74" height="21" alt="Яндекс">
+                <p class="rating-card__value">
+                  <span class="rating-card__value-number"><!-- value -->5,0</span>
+                  <span class="rating-card__value-max">из <!-- value_max -->5</span>
+                </p>
+                <p class="rating-card__stars" role="img" aria-label="Оценка 5 из 5">
+                  <!-- цикл по stars_filled -->
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                </p>
+                <p class="rating-card__count"><!-- reviews_count -->5 678 отзывов</p>
+              </a>
+            </li>
+
+            <!-- ACF: rating_items > item 2 -->
+            <li class="rating-card">
+              <a class="rating-card__link" href="https://yandex.ru/maps/" target="_blank" rel="noopener" aria-label="Перейти на страницу клиники в Яндекс Картах">
+                <img class="rating-card__source" src="assets/icons/logo-yandex.svg" width="74" height="21" alt="Яндекс">
+                <p class="rating-card__value">
+                  <span class="rating-card__value-number"><!-- value -->5,0</span>
+                  <span class="rating-card__value-max">из <!-- value_max -->5</span>
+                </p>
+                <p class="rating-card__stars" role="img" aria-label="Оценка 5 из 5">
+                  <!-- цикл по stars_filled -->
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                </p>
+                <p class="rating-card__count"><!-- reviews_count -->5 678 отзывов</p>
+              </a>
+            </li>
+
+            <!-- ACF: rating_items > item 3 -->
+            <li class="rating-card">
+              <a class="rating-card__link" href="https://yandex.ru/maps/" target="_blank" rel="noopener" aria-label="Перейти на страницу клиники в Яндекс Картах">
+                <img class="rating-card__source" src="assets/icons/logo-yandex.svg" width="74" height="21" alt="Яндекс">
+                <p class="rating-card__value">
+                  <span class="rating-card__value-number"><!-- value -->5,0</span>
+                  <span class="rating-card__value-max">из <!-- value_max -->5</span>
+                </p>
+                <p class="rating-card__stars" role="img" aria-label="Оценка 5 из 5">
+                  <!-- цикл по stars_filled -->
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                </p>
+                <p class="rating-card__count"><!-- reviews_count -->5 678 отзывов</p>
+              </a>
+            </li>
+
+            <!-- ACF: rating_items > item 4 -->
+            <li class="rating-card">
+              <a class="rating-card__link" href="https://yandex.ru/maps/" target="_blank" rel="noopener" aria-label="Перейти на страницу клиники в Яндекс Картах">
+                <img class="rating-card__source" src="assets/icons/logo-yandex.svg" width="74" height="21" alt="Яндекс">
+                <p class="rating-card__value">
+                  <span class="rating-card__value-number"><!-- value -->5,0</span>
+                  <span class="rating-card__value-max">из <!-- value_max -->5</span>
+                </p>
+                <p class="rating-card__stars" role="img" aria-label="Оценка 5 из 5">
+                  <!-- цикл по stars_filled -->
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                </p>
+                <p class="rating-card__count"><!-- reviews_count -->5 678 отзывов</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <div class="faq__inner">
+          <header class="faq__head">
+            <!-- ACF: faq_title -->
+            <h2 class="faq__title" id="faq-title">Часто задаваемые вопросы</h2>
+            <!-- ACF: faq_intro -->
+            <p class="faq__intro">Если не нашли ответ — звоните, мы ответим на любые вопросы</p>
+          </header>
+
+          <!-- ACF: faq_items (Repeater) -->
+          <ul class="faq__list">
+            <!-- ACF: faq_items > item 1 -->
+            <li class="faq-item">
+              <details class="faq-item__details" name="faq" open>
+                <summary class="faq-item__summary">
+                  <span class="faq-item__question"><!-- question -->Больно ли делать имплантацию?</span>
+                  <span class="faq-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="faq-item__answer">
+                  <!-- answer (Wysiwyg) -->
+                  <p>Нет. Операция проводится под местной анестезией — пациент не чувствует боли. Некоторые ощущают лёгкое давление. После операции могут быть умеренный дискомфорт и отёк в течение 2–4 дней, которые снимаются стандартными обезболивающими. По желанию возможна седация.</p>
+                </div>
+              </details>
+            </li>
+
+            <!-- ACF: faq_items > item 2 -->
+            <li class="faq-item">
+              <details class="faq-item__details" name="faq">
+                <summary class="faq-item__summary">
+                  <span class="faq-item__question"><!-- question -->Сколько служит имплант?</span>
+                  <span class="faq-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="faq-item__answer">
+                  <!-- answer (Wysiwyg) -->
+                  <p>При правильной установке, регулярной гигиене и профилактических осмотрах имплант может служить многие годы. Точный прогноз врач даст после диагностики и оценки состояния костной ткани.</p>
+                </div>
+              </details>
+            </li>
+
+            <!-- ACF: faq_items > item 3 -->
+            <li class="faq-item">
+              <details class="faq-item__details" name="faq">
+                <summary class="faq-item__summary">
+                  <span class="faq-item__question"><!-- question -->Можно ли оформить имплант в рассрочку?</span>
+                  <span class="faq-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="faq-item__answer">
+                  <!-- answer (Wysiwyg) -->
+                  <p>Да, лечение можно оплатить в рассрочку. Администратор расскажет о доступных вариантах и поможет подобрать удобный график платежей.</p>
+                </div>
+              </details>
+            </li>
+
+            <!-- ACF: faq_items > item 4 -->
+            <li class="faq-item">
+              <details class="faq-item__details" name="faq">
+                <summary class="faq-item__summary">
+                  <span class="faq-item__question"><!-- question -->Есть ли гарантия на имплантацию?</span>
+                  <span class="faq-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="faq-item__answer">
+                  <!-- answer (Wysiwyg) -->
+                  <p>Гарантийные условия зависят от выбранной системы имплантов и соблюдения рекомендаций врача. Все условия фиксируются в плане лечения до начала работ.</p>
+                </div>
+              </details>
+            </li>
+
+            <!-- ACF: faq_items > item 5 -->
+            <li class="faq-item">
+              <details class="faq-item__details" name="faq">
+                <summary class="faq-item__summary">
+                  <span class="faq-item__question"><!-- question -->Через сколько можно установить имплант после удаления зуба?</span>
+                  <span class="faq-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="faq-item__answer">
+                  <!-- answer (Wysiwyg) -->
+                  <p>Иногда имплант можно установить сразу после удаления зуба, но чаще требуется период заживления. Решение принимается после осмотра и 3D-диагностики.</p>
+                </div>
+              </details>
+            </li>
+
+            <!-- ACF: faq_items > item 6 -->
+            <li class="faq-item">
+              <details class="faq-item__details" name="faq">
+                <summary class="faq-item__summary">
+                  <span class="faq-item__question"><!-- question -->Сколько времени занимает лечение?</span>
+                  <span class="faq-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="faq-item__answer">
+                  <!-- answer (Wysiwyg) -->
+                  <p>Сроки зависят от объёма лечения, необходимости костной пластики и выбранного протокола. После диагностики врач составит поэтапный план с ориентировочными датами.</p>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="services__inner">
+          <header class="services__head">
+            <!-- ACF: services_title -->
+            <h2 class="services__title" id="services-title">Наши врачи помогут</h2>
+            <!-- ACF: services_intro -->
+            <p class="services__intro">Найдите свою проблему и получите направление к нужному специалисту</p>
+          </header>
+
+          <!-- ACF/CPT: services_list (Relationship на CPT service) -->
+          <ul class="services__list" id="services-list">
+            <!-- CPT service: post 1 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/lechenie-zubnoj-boli">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Лечение зубной боли</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Быстрое устранение острой боли, пульпита и инфекций</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 2 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/implantatsiya-zubov">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Имплантация зубов</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Восстановление одного или нескольких зубов под ключ</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 3 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/esteticheskaya-restavratsiya">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Эстетическая реставрация</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Восстановление формы и цвета фронтальных зубов</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 4 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/otbelivanie-zubov">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Отбеливание зубов</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Профессиональное безопасное отбеливание Zoom 4</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 5 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/professionalnaya-chistka">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Профессиональная чистка</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Ультразвук + Air Flow + полировка эмали</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 6 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/lechenie-kariesa">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Лечение кариеса</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Все стадии: от поверхностного до глубокого</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 7 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/protezirovanie">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Протезирование</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Коронки, мосты, виниры, бюгельные протезы</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 8 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/lechenie-desen">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Лечение десен</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Пародонтит, гингивит, пародонтоз</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- CPT service: post 9 -->
+            <li class="services__item">
+              <a class="service-card" href="/services/ortodontiya">
+                <div class="service-card__head">
+                  <h3 class="service-card__title"><!-- service.title -->Ортодонтия</h3>
+                  <span class="service-card__icon" aria-hidden="true">
+                    <img src="assets/icons/icon-arrow-up-right.svg" width="19" height="19" alt="">
+                  </span>
+                </div>
+                <p class="service-card__desc"><!-- service.short_description -->Брекеты, элайнеры Invisalign, ретейнеры</p>
+                <span class="service-card__more">
+                  <span>Подробнее</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                    <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="services__toggle button button--outline button--with-arrow" type="button" aria-expanded="false" aria-controls="services-list">
+            <span class="services__toggle-text" data-text-show="Больше возможностей" data-text-hide="Свернуть">Больше возможностей</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="services__cta">
+            <!-- ACF: services_features (Repeater) -->
+            <ul class="services__features">
+              <li class="services__feature">
+                <span class="services__feature-icon" aria-hidden="true">
+                  <svg width="9" height="7" viewBox="0 0 9 7" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.6 3.2 5.5 8 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span><!-- text -->Более 200 успешных операций в год</span>
+              </li>
+              <li class="services__feature">
+                <span class="services__feature-icon" aria-hidden="true">
+                  <svg width="9" height="7" viewBox="0 0 9 7" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.6 3.2 5.5 8 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span><!-- text -->Работаем с костной пластикой любой сложности</span>
+              </li>
+              <li class="services__feature">
+                <span class="services__feature-icon" aria-hidden="true">
+                  <svg width="9" height="7" viewBox="0 0 9 7" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.6 3.2 5.5 8 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span><!-- text -->Гарантия на имплант и работу врача</span>
+              </li>
+            </ul>
+
+            <!-- ACF: services_button (Group: text + url) -->
+            <a class="services__button button button--accent button--with-arrow" href="/services">
+              <span><!-- services_button.text -->Смотреть все услуги</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="transformations" aria-labelledby="transformations-title">
+        <div class="transformations__inner">
+          <header class="transformations__head">
+            <div class="transformations__heading">
+              <!-- ACF: transformations_title -->
+              <h2 class="transformations__title" id="transformations-title">Меняем жизнь к лучшему</h2>
+              <!-- ACF: transformations_intro -->
+              <p class="transformations__intro">Реальные трансформации — до и после лечения</p>
+            </div>
+
+            <div class="transformations__nav" role="group" aria-label="Навигация по историям">
+              <button class="transformations__arrow transformations__arrow--prev" type="button" aria-label="Предыдущая история">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <span class="transformations__counter" aria-live="polite">
+                <span class="transformations__counter-current">1</span>
+                <span> / </span>
+                <span class="transformations__counter-total">2</span>
+              </span>
+              <button class="transformations__arrow transformations__arrow--next" type="button" aria-label="Следующая история">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="transformations__tabs" role="tablist" aria-label="Выбор истории пациента">
+            <button class="patient-tab is-active" id="patient-tab-0" type="button" role="tab" aria-selected="true" aria-controls="case-0" data-target="0">
+              <span class="patient-tab__avatar">
+                <img src="assets/images/transformations/avatar-1.jpg" alt="" width="70" height="70" loading="lazy">
+              </span>
+              <span class="patient-tab__name">Наталья П.</span>
+            </button>
+            <button class="patient-tab" id="patient-tab-1" type="button" role="tab" aria-selected="false" aria-controls="case-1" data-target="1">
+              <span class="patient-tab__avatar">
+                <img src="assets/images/transformations/avatar-2.jpg" alt="" width="70" height="70" loading="lazy">
+              </span>
+              <span class="patient-tab__name">Сергей К.</span>
+            </button>
+          </div>
+
+          <!-- ACF/CPT: transformations_items (Relationship на CPT transformation) -->
+          <div class="transformations__cases">
+            <article class="transformation-case is-active" id="case-0" role="tabpanel" aria-labelledby="patient-tab-0" data-case="0">
+              <div class="transformation-case__layout">
+                <div class="ba-slider" data-ba-slider style="--ba-position: 50%;">
+                  <div class="ba-slider__images">
+                    <!-- CPT transformation: image_before -->
+                    <img class="ba-slider__image ba-slider__image--before" src="assets/images/transformations/case-1-before.jpg" width="600" height="700" alt="Фото пациента до лечения" loading="lazy">
+                    <!-- CPT transformation: image_after -->
+                    <img class="ba-slider__image ba-slider__image--after" src="assets/images/transformations/case-1-after.jpg" width="600" height="700" alt="Фото пациента после лечения" loading="lazy">
+                  </div>
+
+                  <span class="ba-slider__label ba-slider__label--before">До</span>
+                  <span class="ba-slider__label ba-slider__label--after">После</span>
+                  <span class="ba-slider__service" aria-hidden="true">
+                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <!-- main_service.title -->All-on-6
+                  </span>
+
+                  <button class="ba-slider__handle" type="button" role="slider" tabindex="0" aria-label="Сравнение фото до и после: используйте стрелки клавиатуры или перетащите" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% — равное соотношение до и после">
+                    <span class="ba-slider__handle-icon" aria-hidden="true">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 7 4 12l5 5M15 7l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </button>
+
+                  <span class="ba-slider__hint" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 4 2 8l4 4M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Перетащите для сравнения
+                  </span>
+                </div>
+
+                <article class="transformation-review">
+                  <div class="transformation-review__rating" role="img" aria-label="Оценка 5 из 5">
+                    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  </div>
+                  <!-- CPT transformation: review_title -->
+                  <h3 class="transformation-review__title">Процедура изменила мою жизнь</h3>
+                  <!-- CPT transformation: review_text -->
+                  <blockquote class="transformation-review__text">"All-on-6 полностью изменил мою жизнь к лучшему. Пришла очень нервничая, но вся команда помогла расслабиться. Результат потрясающий — новая улыбка, и восстановление прошло намного легче, чем я ожидала!"</blockquote>
+                  <div class="transformation-review__author">
+                    <span class="transformation-review__avatar">
+                      <img src="assets/images/transformations/avatar-1.jpg" alt="" width="48" height="48" loading="lazy">
+                    </span>
+                    <div class="transformation-review__meta">
+                      <!-- patient_name -->
+                      <cite class="transformation-review__name">Наталья П.</cite>
+                      <!-- treatment_date -->
+                      <time class="transformation-review__date" datetime="2025-03-20">20 марта 2025</time>
+                    </div>
+                  </div>
+                  <div class="transformation-review__divider" aria-hidden="true"></div>
+                  <div class="transformation-review__treatment">
+                    <h4 class="transformation-review__treatment-title">Проведённое лечение</h4>
+                    <!-- services (Relationship на CPT service) -->
+                    <ul class="transformation-review__services">
+                      <li class="service-pill"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>All-on-6</li>
+                      <li class="service-pill"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>Импланты Osstem</li>
+                      <li class="service-pill"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>Дизайн улыбки</li>
+                    </ul>
+                  </div>
+                  <a class="transformation-review__cta button button--accent button--with-arrow" href="#appointment">
+                    <span>Записаться на консультацию</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                      <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </article>
+              </div>
+            </article>
+
+            <article class="transformation-case" id="case-1" role="tabpanel" aria-labelledby="patient-tab-1" data-case="1">
+              <div class="transformation-case__layout">
+                <div class="ba-slider" data-ba-slider style="--ba-position: 50%;">
+                  <div class="ba-slider__images">
+                    <img class="ba-slider__image ba-slider__image--before" src="assets/images/transformations/case-2-before.jpg" width="600" height="700" alt="Фото пациента до лечения" loading="lazy">
+                    <img class="ba-slider__image ba-slider__image--after" src="assets/images/transformations/case-2-after.jpg" width="600" height="700" alt="Фото пациента после лечения" loading="lazy">
+                  </div>
+                  <span class="ba-slider__label ba-slider__label--before">До</span>
+                  <span class="ba-slider__label ba-slider__label--after">После</span>
+                  <span class="ba-slider__service" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>Виниры</span>
+                  <button class="ba-slider__handle" type="button" role="slider" tabindex="0" aria-label="Сравнение фото до и после: используйте стрелки клавиатуры или перетащите" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% — равное соотношение до и после">
+                    <span class="ba-slider__handle-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M9 7 4 12l5 5M15 7l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </button>
+                  <span class="ba-slider__hint" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M6 4 2 8l4 4M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Перетащите для сравнения</span>
+                </div>
+
+                <article class="transformation-review">
+                  <div class="transformation-review__rating" role="img" aria-label="Оценка 5 из 5">
+                    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.33266 7.18474C0.941364 7.23114 0.784212 7.71479 1.07351 7.98232L5.17287 11.7736C5.29077 11.8826 5.34314 12.0453 5.31184 12.2028L4.22385 17.6788C4.14706 18.0653 4.55914 18.3641 4.90298 18.1716L9.7755 15.4448C9.9157 15.3663 10.0859 15.366 10.226 15.4445L15.0981 18.1723C15.4419 18.3647 15.8532 18.0653 15.7764 17.6788L14.6886 12.2025C14.6573 12.045 14.7098 11.8826 14.8278 11.7737L18.9266 7.98247C19.2158 7.71493 19.0591 7.23114 18.6678 7.18474L13.1229 6.52726C12.9634 6.50834 12.8258 6.40792 12.7586 6.2621L10.42 1.19205C10.2549 0.834236 9.74623 0.834304 9.58119 1.19212L7.24253 6.2622C7.17525 6.40803 7.03673 6.50817 6.87725 6.52709L1.33266 7.18474Z"/></svg>
+                  </div>
+                  <h3 class="transformation-review__title">Улыбка стала естественной</h3>
+                  <blockquote class="transformation-review__text">"Долго откладывал лечение, переживал за внешний вид и сроки. Врачи подробно объяснили план, всё прошло спокойно, а результат выглядит очень естественно. Теперь улыбаюсь без стеснения."</blockquote>
+                  <div class="transformation-review__author">
+                    <span class="transformation-review__avatar"><img src="assets/images/transformations/avatar-2.jpg" alt="" width="48" height="48" loading="lazy"></span>
+                    <div class="transformation-review__meta"><cite class="transformation-review__name">Сергей К.</cite><time class="transformation-review__date" datetime="2025-04-12">12 апреля 2025</time></div>
+                  </div>
+                  <div class="transformation-review__divider" aria-hidden="true"></div>
+                  <div class="transformation-review__treatment">
+                    <h4 class="transformation-review__treatment-title">Проведённое лечение</h4>
+                    <ul class="transformation-review__services">
+                      <li class="service-pill"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>Виниры</li>
+                      <li class="service-pill"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>Реставрация</li>
+                      <li class="service-pill"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5 3.5 6.38 7.5 2.25" stroke="currentColor" stroke-width="0.94" stroke-linecap="round" stroke-linejoin="round"/></svg>Профгигиена</li>
+                    </ul>
+                  </div>
+                  <a class="transformation-review__cta button button--accent button--with-arrow" href="#appointment"><span>Записаться на консультацию</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/><path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation" id="appointment" aria-labelledby="consultation-title">
+        <div class="consultation__inner">
+          <div class="consultation__form-side">
+            <!-- ACF: consultation_title -->
+            <h2 class="consultation__title" id="consultation-title">Запишитесь на бесплатную консультацию</h2>
+            <!-- ACF: consultation_intro -->
+            <p class="consultation__intro">В ближайшее время с вами свяжется администратор, проконсультирует по стоимости и подберёт врача. Консультация — от 30 до 60 минут.</p>
+
+            <form class="consultation-form" novalidate>
+              <div class="consultation-form__field">
+                <label class="visually-hidden" for="consultation-name">Ваше имя</label>
+                <input class="consultation-form__input" type="text" id="consultation-name" name="name" placeholder="Ваше имя" autocomplete="name" required minlength="2" maxlength="60">
+              </div>
+
+              <div class="consultation-form__field">
+                <label class="visually-hidden" for="consultation-phone">Телефон</label>
+                <input class="consultation-form__input" type="tel" id="consultation-phone" name="phone" placeholder="Телефон" autocomplete="tel" inputmode="tel" required pattern="[\d\s\-\(\)\+]{10,20}">
+              </div>
+
+              <div class="consultation-form__consent">
+                <input class="consultation-form__checkbox" type="checkbox" id="consultation-consent" name="consent" required>
+                <label class="consultation-form__consent-label" for="consultation-consent">
+                  <span class="consultation-form__consent-text">
+                    Нажимая кнопку, вы даёте согласие на
+                    <a href="/privacy" class="consultation-form__consent-link">обработку персональных данных</a>
+                    и принимаете
+                    <a href="/policy" class="consultation-form__consent-link">политику конфиденциальности</a>
+                  </span>
+                </label>
+              </div>
+
+              <!-- ACF: consultation_button_text -->
+              <button class="consultation-form__submit button button--accent button--with-arrow" type="submit">
+                <span>Записаться на консультацию</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                  <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="consultation__visual">
+            <!-- ACF: consultation_image -->
+            <img class="consultation__image" src="assets/images/clinic-photo.jpg" width="808" height="630" alt="Стоматологический кабинет клиники Даймонд" loading="lazy">
+
+            <div class="consultation__widgets">
+              <div class="status-pill" data-status-widget data-schedule='{"mon-fri":"09:00-20:00","sat-sun":"09:00-20:00"}'>
+                <span class="status-pill__dot" aria-hidden="true"></span>
+                <span class="status-pill__text"><!-- ACF: consultation_status_label -->Мы сейчас открыты</span>
+              </div>
+
+              <div class="next-slot">
+                <p class="next-slot__label"><!-- ACF: consultation_next_slot.label -->Ближайшее время приёма</p>
+                <p class="next-slot__value">
+                  <!-- ACF: consultation_next_slot.date, consultation_next_slot.weekday -->
+                  <time datetime="2026-03-12">12 марта</time>
+                  <span>Четверг</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map" aria-labelledby="map-title">
+        <div class="map__inner">
+          <!-- ACF: map_title -->
+          <h2 class="map__title" id="map-title">Адрес клиники на карте</h2>
+
+          <div class="map__container">
+            <!-- ACF Options: clinic_map_embed -->
+            <div class="map__frame">
+              <iframe src="https://yandex.ru/map-widget/v1/?ll=37.391044%2C55.829893&mode=search&text=%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%202%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&z=17" title="Карта расположения клиники Даймонд: Красногорск, Ильинский бульвар, 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="geolocation"></iframe>
+            </div>
+
+            <aside class="map__contacts" aria-label="Контактная информация клиники">
+              <div class="map__contacts-main">
+                <h3 class="map__contacts-title">Служба поддержки</h3>
+                <!-- ACF Options: clinic_phone_support -->
+                <a class="map__contacts-phone" href="tel:+79309287387">+7 (930) 928-73-87</a>
+                <!-- ACF Options: clinic_schedule_short -->
+                <p class="map__contacts-schedule">Ежедневно с 8:00 до 20:00</p>
+              </div>
+
+              <ul class="map__contacts-list">
+                <li>
+                  <!-- ACF Options: clinic_email -->
+                  <a class="map__contacts-link" href="mailto:diamond.mesropova@yandex.ru">
+                    <span class="map__contacts-icon" aria-hidden="true">
+                      <img src="assets/icons/icon-map-mail.svg" width="22" height="22" alt="">
+                    </span>
+                    <span>diamond.mesropova@yandex.ru</span>
+                  </a>
+                </li>
+                <li>
+                  <!-- ACF Options: clinic_address_full, clinic_metro -->
+                  <a class="map__contacts-link" href="https://yandex.ru/maps/-/CDQjUL0c" target="_blank" rel="noopener">
+                    <span class="map__contacts-icon" aria-hidden="true">
+                      <img src="assets/icons/icon-map-pin.svg" width="22" height="22" alt="">
+                    </span>
+                    <span>г. Красногорск, Ильинский бульвар, 2 | м. Мякинино</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- ACF Options: clinic_socials -->
+              <ul class="map__socials" aria-label="Связаться в мессенджерах">
+                <li>
+                  <a class="map__social-link" href="https://wa.me/79309287387" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+                    <img src="assets/icons/icon-map-chat.svg" width="20" height="20" alt="" aria-hidden="true">
+                  </a>
+                </li>
+                <li>
+                  <a class="map__social-link" href="https://t.me/diamond_clinic" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+                    <img src="assets/icons/icon-map-telegram.svg" width="20" height="20" alt="" aria-hidden="true">
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ACF Options: clinic_address_full, clinic_metro, clinic_phone_main, clinic_schedule_short, clinic_socials -->
+    <!-- ACF Options: legal_company_name, legal_inn, legal_license_short, legal_license_full, legal_copyright_template -->
+    <!-- WP menus: footer-services, footer-info -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <a class="footer__logo" href="/" aria-label="Даймонд, перейти на главную">
+              <img src="assets/icons/logo-white.svg" width="140" height="41" alt="Даймонд стоматологический центр">
+            </a>
+
+            <ul class="footer__socials" aria-label="Связаться в мессенджерах">
+              <li>
+                <a class="footer__social-link" href="https://wa.me/79309287387" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+                  <img src="assets/icons/icon-footer-chat.svg" width="13" height="13" alt="" aria-hidden="true">
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="https://t.me/diamond_clinic" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+                  <img src="assets/icons/icon-footer-telegram.svg" width="13" height="13" alt="" aria-hidden="true">
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="tel:+79309287387" aria-label="Позвонить в клинику">
+                  <img src="assets/icons/icon-footer-phone-social.svg" width="13" height="13" alt="" aria-hidden="true">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="footer__nav footer__nav--services" aria-label="Услуги">
+            <h2 class="footer__nav-title">Услуги</h2>
+            <ul class="footer__nav-list">
+              <li><a href="/services/implantation">Имплантация зубов</a></li>
+              <li><a href="/services/implant-prosthetics">Протезы на имплантах</a></li>
+              <li><a href="/services/all-on-4-6">All-on-4 / All-on-6</a></li>
+              <li><a href="/services/prosthetics">Протезирование зубов</a></li>
+              <li><a href="/services/treatment">Лечение зубов</a></li>
+              <li><a href="/services/surgery">Хирургия</a></li>
+              <li><a href="/services/orthodontics">Ортодонтия</a></li>
+              <li><a href="/services/pediatric">Детская стоматология</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav footer__nav--info" aria-label="Информация о клинике">
+            <h2 class="footer__nav-title">Информация</h2>
+            <ul class="footer__nav-list">
+              <li><a href="/about">О клинике</a></li>
+              <li><a href="/doctors">Врачи</a></li>
+              <li><a href="/prices">Цены</a></li>
+              <li><a href="/reviews">Отзывы</a></li>
+              <li><a href="/blog">Блог</a></li>
+              <li><a href="/promo">Акции</a></li>
+              <li><a href="/contacts">Контакты</a></li>
+              <li><a href="/privacy">Политика конфиденциальности</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer__contacts" aria-label="Контакты клиники">
+            <h2 class="footer__nav-title">Контакты</h2>
+            <ul class="footer__contacts-list">
+              <li>
+                <a class="footer__contact-link" href="https://yandex.ru/maps/-/CDQjUL0c" target="_blank" rel="noopener">
+                  <span class="footer__contact-icon" aria-hidden="true">
+                    <img src="assets/icons/icon-footer-pin.svg" width="14" height="14" alt="">
+                  </span>
+                  <span>г. Красногорск, Ильинский бульвар, 2 | м. Мякинино</span>
+                </a>
+              </li>
+              <li>
+                <a class="footer__contact-link" href="tel:+79309287387">
+                  <span class="footer__contact-icon" aria-hidden="true">
+                    <img src="assets/icons/icon-footer-phone.svg" width="14" height="14" alt="">
+                  </span>
+                  <span>+7 (930) 928-73-87</span>
+                </a>
+              </li>
+              <li>
+                <span class="footer__contact-link footer__contact-link--static">
+                  <span class="footer__contact-icon" aria-hidden="true">
+                    <img src="assets/icons/icon-footer-clock.svg" width="14" height="14" alt="">
+                  </span>
+                  <span>Ежедневно 9:00-20:00</span>
+                </span>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © <span data-current-year>2026</span> Даймонд. Лицензия: ЛО-50-01-002649. ИНН 5024216752
+          </p>
+          <p class="footer__legal">
+            Лицензия № ЛО-50-01-002649 от 15.01.2020
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/promo.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/transformations.js"></script>
+  </body>
+</html>
