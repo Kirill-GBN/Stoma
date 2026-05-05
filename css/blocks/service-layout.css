@@ -45,7 +45,7 @@
 }
 
 .service-layout__sticky {
-  /* position: sticky; */
+  position: sticky;
   top: var(--service-layout-sticky-top);
   display: flex;
   flex-direction: column;
