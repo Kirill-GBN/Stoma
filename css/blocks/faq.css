@@ -7,6 +7,23 @@
   background: var(--color-doctors-bg);
 }
 
+/* Главная: ширина как у rating / services (контент — max 1440px + боковые отступы) */
+.faq-page-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: var(--color-bg);
+}
+
+.faq-page-wrap .faq {
+  flex: 0 1 auto;
+  width: min(100%, var(--container-max));
+  box-sizing: border-box;
+}
+
 .faq__head {
   display: flex;
   flex-direction: column;
@@ -182,6 +199,11 @@
 }
 
 @media (max-width: 767px) {
+  .faq-page-wrap {
+    margin-top: 30px;
+    padding: 0 var(--container-padding-mobile-fluid);
+  }
+
   .faq {
     padding: 30px 16px;
   }
