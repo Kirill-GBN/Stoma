@@ -1,0 +1,311 @@
+/* Мега-меню «Услуги»: токены из Framelink (Frame 645, node 270:12739).
+ * Тень: повторная проверка выгрузки — у этого узла и вложенных (644, инстанс 610) полей effects нет;
+ * официальный Figma MCP к файлу недоступен — см. комментарий у box-shadow ниже.
+ */
+
+.header__nav-item--has-mega {
+  position: relative;
+}
+
+.header__nav-link--toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--fs-md);
+  line-height: var(--lh-tight);
+  text-transform: uppercase;
+}
+
+.header__nav-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  transition: transform 200ms ease;
+}
+
+.header__nav-link--toggle[aria-expanded="true"] .header__nav-chevron {
+  transform: rotate(180deg);
+}
+
+.header__nav-item--has-mega.is-mega-open {
+  z-index: 60;
+}
+
+.mega-menu {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  max-height: calc(100vh - 120px);
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 59px 62px;
+  border-radius: 0 0 var(--radius-m) var(--radius-m);
+  background: var(--color-bg);
+  /* Не из Frame 645 (effects отсутствуют в данных узла и детей) — значение как у плашки контактов на карте. */
+  box-shadow:
+    0 4px 16px -4px rgba(28, 45, 107, 0.08),
+    0 24px 80px -12px rgba(28, 45, 107, 0.16);
+  z-index: 50;
+
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+  pointer-events: none;
+}
+
+.mega-menu::before {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  height: 25px;
+  content: "";
+}
+
+.mega-menu:not([hidden]) {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mega-menu[hidden] {
+  display: none;
+}
+
+.mega-menu__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mega-menu__categories {
+  flex: 0 0 237px;
+  margin: 0;
+  padding: 0;
+  padding-right: 26px;
+  border-right: 1px solid rgba(19, 61, 141, 0.1);
+  list-style: none;
+}
+
+.mega-menu__categories-item {
+  margin: 0;
+}
+
+.mega-menu__categories-item + .mega-menu__categories-item {
+  margin-top: 22px;
+}
+
+.mega-menu__category {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(19, 61, 141, 0.5);
+  font-family: var(--font-primary);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.04em;
+  text-align: left;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.mega-menu__category:hover,
+.mega-menu__category:focus-visible {
+  color: var(--color-primary);
+}
+
+.mega-menu__category.is-active {
+  color: var(--color-primary);
+}
+
+.mega-menu__content {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-right: 94px;
+  padding-left: 26px;
+}
+
+.mega-menu__columns {
+  display: grid;
+  grid-template-columns: 298px 247px;
+  gap: 26px;
+  align-items: start;
+}
+
+.mega-menu__category-title {
+  margin: 0 0 33px;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+}
+
+.mega-menu__subtitle {
+  margin: 33px 0 12px;
+  color: rgba(19, 61, 141, 0.8);
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+}
+
+.mega-menu__subtitle:first-child {
+  margin-top: 0;
+}
+
+.mega-menu__list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mega-menu__list--primary + .mega-menu__subtitle {
+  margin-top: 33px;
+}
+
+.mega-menu__list a {
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.mega-menu__list a:hover,
+.mega-menu__list a:focus-visible {
+  color: var(--color-accent);
+}
+
+.mega-menu__promo.promo-card {
+  flex: 0 0 400px;
+  width: 400px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 1180px) {
+  .mega-menu {
+    padding: 48px var(--space-6);
+  }
+
+  .mega-menu__content {
+    margin-right: 48px;
+  }
+
+  .mega-menu__columns {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__nav-link--toggle {
+    font-size: var(--fs-sm);
+  }
+
+  .mega-menu__categories {
+    flex-basis: 200px;
+  }
+
+  .mega-menu__promo.promo-card {
+    flex-basis: min(320px, 36vw);
+    width: min(320px, 36vw);
+  }
+}
+
+@media (max-width: 767px) {
+  .mega-menu {
+    display: none !important;
+  }
+
+  .header__submenu {
+    display: grid;
+    gap: 4px;
+    margin-top: 8px;
+    margin-left: 16px;
+    padding-left: 12px;
+    border-left: 2px solid var(--color-border);
+  }
+
+  .header__submenu[hidden] {
+    display: none;
+  }
+
+  .header__submenu-link {
+    display: block;
+    padding: 10px 0;
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: var(--fs-md);
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: -0.04em;
+  }
+
+  .header__submenu-link:hover,
+  .header__submenu-link:focus-visible {
+    color: var(--color-accent);
+  }
+
+  .header__menu-chevron {
+    display: inline-flex;
+    flex-shrink: 0;
+    transition: transform 220ms ease;
+  }
+
+  .header__menu-link--toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    width: 100%;
+    padding-block: var(--space-2);
+    border: 0;
+    background: transparent;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    line-height: var(--lh-tight);
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .header__menu-link--toggle:hover,
+  .header__menu-link--toggle:focus-visible {
+    color: var(--color-accent);
+  }
+
+  .header__menu-link--toggle[aria-expanded="true"] .header__menu-chevron {
+    transform: rotate(180deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mega-menu,
+  .header__nav-chevron,
+  .header__menu-chevron {
+    transition-duration: 1ms;
+  }
+}

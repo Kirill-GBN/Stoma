@@ -1,0 +1,64 @@
+/*
+ * .c-tabs — общий компонент табов (стиль как у имплант-методов / Figma Tab).
+ * Используется в: .implant-methods, .prosthetics-types.
+ * Логика: /js/lib/tabs.js + [data-tabs].
+ * .indications — отдельная стилистика, без этого компонента.
+ */
+
+.c-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.c-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.c-tabs__tab {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.c-tabs__tab:hover:not(.is-active) {
+  background: rgb(28 45 107 / 6%);
+}
+
+.c-tabs__tab:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.c-tabs__tab.is-active {
+  background: #f7cfe9;
+  color: var(--color-accent);
+}
+
+@media (max-width: 767px) {
+  .c-tabs__list {
+    gap: 3px;
+  }
+
+  .c-tabs__tab {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

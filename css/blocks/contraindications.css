@@ -1,0 +1,210 @@
+/* Блок «Противопоказания» — Framelink 216:9999 / 216:12558 */
+
+.contraindications {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.contraindications__head {
+  margin: 0 0 20px;
+}
+
+.contraindications__title {
+  margin: 0 0 12px;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.contraindications__intro {
+  margin: 0;
+  max-width: 42rem;
+  padding: 10px 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.contraindications__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 21px;
+}
+
+.contraindications-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--color-danger-border);
+  border-radius: 14px;
+  background: var(--color-bg);
+}
+
+.contraindications-card--warning {
+  border-color: var(--color-warning-border);
+}
+
+.contraindications-card__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px 20px;
+}
+
+.contraindications-card--danger .contraindications-card__head {
+  gap: 10px;
+  border-bottom: 1px solid var(--color-danger-border);
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  transition: background-color 160ms ease;
+}
+
+.contraindications-card--danger .contraindications-card__head:hover {
+  background-color: var(--color-danger-bg-soft);
+}
+
+.contraindications-card--warning .contraindications-card__head {
+  gap: 10px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-warning-border);
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+  transition: background-color 160ms ease;
+}
+
+.contraindications-card--warning .contraindications-card__head:hover {
+  background-color: var(--color-warning-bg-soft);
+}
+
+.contraindications-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: currentColor;
+}
+
+.contraindications-card__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.contraindications-card__title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.05em;
+}
+
+.contraindications-card--danger .contraindications-card__title {
+  color: var(--color-danger);
+}
+
+.contraindications-card--warning .contraindications-card__title {
+  color: var(--color-warning);
+}
+
+.contraindications-card__subtitle {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  letter-spacing: -0.05em;
+}
+
+.contraindications-card--danger .contraindications-card__subtitle {
+  color: var(--color-danger-muted);
+}
+
+.contraindications-card--warning .contraindications-card__subtitle {
+  color: var(--color-warning-muted);
+}
+
+.contraindications-card__list {
+  margin: 0;
+  padding: 21px 24px 24px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contraindications-card__list li {
+  position: relative;
+  padding-left: 18px;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.contraindications-card__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+}
+
+.contraindications-card--danger .contraindications-card__list li::before {
+  background: var(--color-danger-marker);
+}
+
+.contraindications-card--warning .contraindications-card__list li::before {
+  background: var(--color-warning-marker);
+}
+
+@media (max-width: 767px) {
+  .contraindications__title {
+    margin-bottom: 10px;
+    font-size: var(--fs-md);
+  }
+
+  .contraindications__intro {
+    padding: 0;
+    font-size: var(--fs-sm);
+    letter-spacing: -0.04em;
+  }
+
+  .contraindications__head {
+    margin-bottom: 16px;
+  }
+
+  .contraindications__cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contraindications-card__title {
+    font-size: var(--fs-sm);
+  }
+
+  .contraindications-card__list li {
+    font-size: var(--fs-sm);
+    letter-spacing: -0.04em;
+  }
+
+  .contraindications-card__list li::before {
+    top: 0.52em;
+  }
+}

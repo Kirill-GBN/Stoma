@@ -1,0 +1,199 @@
+/* Слайдер «Примеры работ» — Framelink 216:10061 / 216:12622 */
+
+.cases-slider {
+  --cases-slider-media-col: 394px;
+  --cases-slider-media-gap: 43px;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 60px var(--container-padding-desktop);
+  border-radius: var(--radius-m);
+  background: var(--color-doctors-bg);
+}
+
+.cases-slider__head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cases-slider__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.cases-slider__intro {
+  margin: 0;
+  max-width: 42rem;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  letter-spacing: -0.05em;
+  color: var(--color-service-feature-text);
+}
+
+.cases-slider__shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+.cases-slider__slider {
+  width: 100%;
+}
+
+.cases-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cases-slider__slide {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+}
+
+.cases-slider__slide > .case-card {
+  flex: 1 1 auto;
+}
+
+/* Нав — те же приёмы, что у `.our-doctors__nav` (локальная копия селекторов) */
+
+.cases-slider__nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.cases-slider__nav-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-full);
+  background: #ffffff;
+  color: #0f1b33;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    opacity 160ms ease;
+}
+
+.cases-slider__nav-btn:hover:not(.swiper-button-disabled) {
+  border-color: rgb(28 45 107 / 35%);
+}
+
+.cases-slider__nav-btn:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.cases-slider__nav-btn.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cases-slider__nav-btn svg {
+  flex-shrink: 0;
+}
+
+.cases-slider__counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #99a1af;
+}
+
+.cases-slider__counter-current {
+  color: #99a1af;
+}
+
+.cases-slider__counter-sep {
+  color: #99a1af;
+}
+
+.cases-slider__counter-total {
+  color: #99a1af;
+}
+
+@media (min-width: 1024px) {
+  .cases-slider .case-card {
+    align-items: stretch;
+  }
+
+  .cases-slider .case-card__content {
+    padding-bottom: 44px;
+  }
+
+  .cases-slider__nav {
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--cases-slider-media-col) + var(--cases-slider-media-gap));
+    z-index: 2;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cases-slider {
+    padding: 40px 24px;
+  }
+
+  .cases-slider__nav {
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0;
+    align-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .cases-slider {
+    padding: 30px var(--container-padding-mobile);
+  }
+
+  .cases-slider__title {
+    font-size: var(--fs-md);
+  }
+
+  .cases-slider__intro {
+    font-size: var(--fs-sm);
+    letter-spacing: -0.04em;
+  }
+
+  .cases-slider__head {
+    margin-bottom: 16px;
+  }
+
+  .cases-slider__nav {
+    flex-shrink: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cases-slider__nav-btn {
+    transition: none;
+  }
+}

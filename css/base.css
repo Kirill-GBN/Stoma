@@ -72,6 +72,16 @@ button:focus-visible {
   color: var(--color-primary);
 }
 
+.button--outline-accent {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.button--outline-accent:hover,
+.button--outline-accent:focus-visible {
+  background: rgb(207 80 147 / 8%);
+}
+
 .button--outline-light {
   border-color: var(--color-button-outline-light);
   color: var(--color-button-outline-light);

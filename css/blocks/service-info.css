@@ -1,0 +1,200 @@
+/* Блок «Что такое имплантация» (Framelink 216:9505 десктоп, 216:11918 мобайл) */
+
+.service-info {
+  margin: 0;
+}
+
+.service-info__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 475fr) minmax(0, 462fr);
+  gap: 31px;
+  align-items: start;
+  padding: clamp(40px, 5vw, 60px) clamp(28px, 5vw, 60px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-m);
+  background: var(--color-bg);
+}
+
+.service-info__content {
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  min-width: 0;
+}
+
+.service-info__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(var(--fs-md), 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.service-info__subtitle {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+
+.service-info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.service-info__text p {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.service-info__visual {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow:
+    0 2px 4px -2px rgb(0 0 0 / 10%),
+    0 4px 6px -1px rgb(0 0 0 / 10%);
+}
+
+.service-info__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-info__badge {
+  position: absolute;
+  bottom: clamp(14px, 2.5vw, 25px);
+  left: clamp(10px, 2vw, 13px);
+  right: clamp(10px, 2vw, 13px);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 432px;
+  padding: 12px;
+  margin-inline: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: var(--radius-md);
+  background: rgb(255 255 255 / 90%);
+  box-shadow:
+    0 2px 4px -2px rgb(0 0 0 / 8%),
+    0 4px 8px -2px rgb(28 45 107 / 8%);
+}
+
+.service-info__badge-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: #eef2ff;
+}
+
+.service-info__badge-icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.service-info__badge-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.service-info__badge-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.service-info__badge-subtitle {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: -0.04em;
+  color: #6a7282;
+}
+
+@media (max-width: 767px) {
+  .service-info__layout {
+    grid-template-columns: 1fr;
+    gap: clamp(16px, 4vw, 24px);
+    padding: clamp(18px, 4vw, 22px);
+  }
+
+  .service-info__title {
+    font-size: var(--fs-md);
+    line-height: 1.219;
+  }
+
+  .service-info__subtitle {
+    font-size: var(--fs-sm);
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .service-info__text p {
+    font-size: var(--fs-sm);
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .service-info__visual {
+    border-radius: 14px;
+  }
+
+  .service-info__image {
+    aspect-ratio: 311 / 236;
+    max-height: none;
+  }
+
+  .service-info__badge {
+    gap: 8px;
+    padding: 10px 12px;
+    bottom: clamp(10px, 3vw, 16px);
+    left: clamp(6px, 2vw, 12px);
+    right: clamp(6px, 2vw, 12px);
+    max-width: none;
+  }
+
+  .service-info__badge-title {
+    font-size: var(--fs-xs);
+    line-height: 1.219;
+  }
+
+  .service-info__badge-subtitle {
+    font-size: var(--fs-xs);
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+  }
+
+  .service-info__badge-icon {
+    width: 36px;
+    height: 36px;
+  }
+}

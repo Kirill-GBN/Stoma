@@ -1,0 +1,268 @@
+/* Блок «Наши врачи» — секция и слайдер (токены Framelink 216:9764 / 216:12299) */
+
+.our-doctors {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 60px 62px;
+  border-radius: 13px;
+  background: #eeeef5;
+}
+
+.our-doctors__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 19px;
+}
+
+.our-doctors__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: min(100%, 280px);
+}
+
+.our-doctors__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.our-doctors__subtitle {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.our-doctors__nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.our-doctors__nav-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-full);
+  background: #ffffff;
+  color: #0f1b33;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    opacity 160ms ease;
+}
+
+.our-doctors__nav-btn:hover:not(.swiper-button-disabled) {
+  border-color: rgb(28 45 107 / 35%);
+}
+
+.our-doctors__nav-btn:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.our-doctors__nav-btn.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.our-doctors__nav-btn svg {
+  flex-shrink: 0;
+}
+
+.our-doctors__counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #99a1af;
+}
+
+.our-doctors__counter-current {
+  color: #99a1af;
+}
+
+.our-doctors__counter-sep {
+  color: #99a1af;
+}
+
+.our-doctors__counter-total {
+  color: #99a1af;
+}
+
+.our-doctors__slider-shell {
+  display: block;
+}
+
+.our-doctors__slider {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Swiper Grid сам выставляет flex-wrap на .swiper-wrapper — не переопределять nowrap */
+
+.our-doctors__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Не задавать width слайдам — ширину выставляет Swiper inline */
+.our-doctors__slide.swiper-slide {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  min-width: 0;
+}
+
+.our-doctors__slider .our-doctors__pagination.swiper-pagination {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 12px 0 0;
+}
+
+.our-doctors__slider .our-doctors__pagination .swiper-pagination-bullet {
+  box-sizing: border-box;
+  width: 7px;
+  height: 7px;
+  margin: 0 !important;
+  border-radius: 50%;
+  background: #cad2e8;
+  opacity: 1;
+  transition:
+    width 160ms ease,
+    border-radius 160ms ease,
+    background-color 160ms ease;
+}
+
+.our-doctors__slider .our-doctors__pagination .swiper-pagination-bullet-active {
+  width: 35px;
+  height: 7px;
+  border-radius: 100px;
+  background: var(--color-primary);
+}
+
+.our-doctors__cta {
+  margin-top: 12px;
+}
+
+.our-doctors__button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 197px;
+  min-height: 51px;
+  padding: 16px;
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 10px;
+  background: var(--color-bg);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    opacity 160ms ease;
+}
+
+.our-doctors__button svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  color: var(--color-primary);
+}
+
+.our-doctors__button:hover {
+  opacity: 0.92;
+}
+
+.our-doctors__button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .our-doctors {
+    padding: 24px 16px;
+  }
+
+  .our-doctors__head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .our-doctors__heading {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 4px;
+    max-width: none;
+  }
+
+  .our-doctors__nav {
+    flex-shrink: 0;
+  }
+
+  .our-doctors__title {
+    font-size: 16px;
+    line-height: 1.219;
+  }
+
+  .our-doctors__subtitle {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .our-doctors__button {
+    width: 100%;
+    min-height: 46px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .our-doctors__nav-btn,
+  .our-doctors__slider .our-doctors__pagination .swiper-pagination-bullet {
+    transition: none;
+  }
+}

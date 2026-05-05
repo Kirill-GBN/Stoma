@@ -1,0 +1,151 @@
+/*
+ * .doctor-card — переиспользуемый компонент.
+ * Используется на странице услуги (services/*).
+ * На главной пока живёт старая версия в doctors.css — миграция отдельной задачей.
+ */
+
+.doctor-card {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  border-radius: 13px;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.doctor-card__link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.doctor-card__link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.doctor-card__photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 293 / 284;
+  overflow: hidden;
+  border-radius: 13px;
+}
+
+.doctor-card__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 5%;
+}
+
+.doctor-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+.doctor-card__credentials {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .doctor-card__credentials {
+    flex-grow: 1;
+  }
+}
+
+.doctor-card__name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.doctor-card__role {
+  margin: 0;
+  padding: 10px 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.doctor-card__more {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+  padding: 16px;
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.doctor-card__more svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 767px) {
+  .doctor-card__photo {
+    aspect-ratio: 292 / 200;
+  }
+
+  .doctor-card__name {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .doctor-card__role {
+    font-size: 14px;
+    letter-spacing: -0.04em;
+  }
+
+  .doctor-card__more {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.0369em;
+    text-transform: none;
+    color: var(--color-text);
+  }
+
+  .doctor-card__more svg {
+    color: var(--color-text);
+  }
+}

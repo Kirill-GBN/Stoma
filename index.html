@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/mega-menu.css">
     <link rel="stylesheet" href="css/blocks/hero.css">
     <link rel="stylesheet" href="css/blocks/stats.css">
     <link rel="stylesheet" href="css/blocks/doctors.css">
@@ -62,12 +63,443 @@
       </div>
 
       <div class="header__bottom">
-        <div class="header__bottom-inner">
+        <div class="header__bottom-inner" data-mega-menu-anchor>
           <nav class="header__nav" aria-label="Главная навигация">
             <ul class="header__nav-list">
-              <li class="header__nav-item"><a class="header__nav-link" href="#services">Услуги</a></li>
+              <li class="header__nav-item header__nav-item--has-mega">
+                <button
+                  class="header__nav-link header__nav-link--toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="mega-menu-services"
+                  data-mega-menu-trigger
+                >
+                  Услуги
+                  <span class="header__nav-chevron" aria-hidden="true">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+
+                <!-- WP: таксономия service_category + CPT service; Options: mega_menu_promo -->
+                <div class="mega-menu" id="mega-menu-services" hidden data-mega-menu-panel data-state="closed">
+                  <div class="mega-menu__inner">
+                    <!-- ACF/WP: get_terms('service_category') -->
+                    <ul class="mega-menu__categories" role="tablist" aria-label="Категории услуг">
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-implantation"
+                          class="mega-menu__category is-active"
+                          type="button"
+                          role="tab"
+                          aria-selected="true"
+                          aria-controls="mega-cat-implantation"
+                          tabindex="0"
+                          data-target="implantation"
+                        >
+                          Имплантация зубов
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-prosthetics"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-prosthetics"
+                          tabindex="-1"
+                          data-target="prosthetics"
+                        >
+                          Протезы на имплантах
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-treatment"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-treatment"
+                          tabindex="-1"
+                          data-target="treatment"
+                        >
+                          Лечение зубов
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-surgery"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-surgery"
+                          tabindex="-1"
+                          data-target="surgery"
+                        >
+                          Хирургия
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-orthodontics"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-orthodontics"
+                          tabindex="-1"
+                          data-target="orthodontics"
+                        >
+                          Ортодонтия
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-gums"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-gums"
+                          tabindex="-1"
+                          data-target="gums"
+                        >
+                          Лечение дёсен
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-hygiene"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-hygiene"
+                          tabindex="-1"
+                          data-target="hygiene"
+                        >
+                          Гигиена и отбеливание
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-pediatric"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-pediatric"
+                          tabindex="-1"
+                          data-target="pediatric"
+                        >
+                          Детская стоматология
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="mega-menu__content">
+                      <section
+                        class="mega-menu__category-content is-active"
+                        id="mega-cat-implantation"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-implantation"
+                        data-category="implantation"
+                      >
+                        <h3 class="mega-menu__category-title">Имплантация зубов</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/implantation-turnkey.html">Имплантация зубов под ключ</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Виды имплантации</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/odnomomentnaya-implantatsiya.html">Одномоментная имплантация</a></li>
+                              <li><a href="/services/one-stage">Одноэтапная имплантация</a></li>
+                              <li><a href="/services/two-stage">Двухэтапная имплантация</a></li>
+                              <li><a href="/services/no-bone-graft">Имплантация без костной пластики</a></li>
+                              <li><a href="/services/zygomatic">Скуловая имплантация</a></li>
+                              <li><a href="/services/transnasal">Трансназальная имплантация</a></li>
+                              <li><a href="/services/malocclusion">При неправильном прикусе</a></li>
+                              <li><a href="/services/gentle">Бережная имплантация</a></li>
+                              <li><a href="/services/wisdom-tooth">Пересадка зуба мудрости</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/implantation-installment">Имплантация в рассрочку</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">При недостатке кости или десны</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/bone-graft">Костная пластика</a></li>
+                              <li><a href="/services/sinus-lift">Синус-лифтинг</a></li>
+                              <li><a href="/services/gum-graft">Наращивание десны</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-prosthetics"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-prosthetics"
+                        hidden
+                        data-category="prosthetics"
+                      >
+                        <h3 class="mega-menu__category-title">Протезы на имплантах</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/fixed-on-implants">Несъёмное протезирование</a></li>
+                              <li><a href="/services/removable-on-implants">Съёмный протез на имплантах</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Решения по объёму дефекта</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/single-crown-implant">Коронка на импланте</a></li>
+                              <li><a href="/services/bridge-on-implants">Мост на имплантах</a></li>
+                              <li><a href="/services/full-arch-fixed">Полное восстановление ряда</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Материалы и этапы</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/zirconia-prosthesis">Циркониевые конструкции</a></li>
+                              <li><a href="/services/acrylic-base">Пластиночное базисное решение</a></li>
+                              <li><a href="/services/fitting-adjustment">Примерка и фиксация</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-treatment"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-treatment"
+                        hidden
+                        data-category="treatment"
+                      >
+                        <h3 class="mega-menu__category-title">Лечение зубов</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/examination-plan">Осмотр и план лечения</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Терапия</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/caries-treatment">Лечение кариеса</a></li>
+                              <li><a href="/services/endodontics">Эндодонтическое лечение</a></li>
+                              <li><a href="/services/aesthetic-restoration">Эстетическая реставрация</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Диагностика и профилактика</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/diagnocat-review">Разбор диагностики Diagnocat</a></li>
+                              <li><a href="/services/reminearalization">Реминерализация эмали</a></li>
+                              <li><a href="/services/sensitivity-treatment">Чувствительность зубов</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-surgery"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-surgery"
+                        hidden
+                        data-category="surgery"
+                      >
+                        <h3 class="mega-menu__category-title">Хирургия</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/tooth-extraction">Удаление зубов</a></li>
+                              <li><a href="/services/complex-extraction">Сложное удаление</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Подготовка к протезированию</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/alveoplasty">Альвеолярная пластика</a></li>
+                              <li><a href="/services/exposure-fangs">Хирургическое обнажение клыков</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Мягкие ткани</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/frenectomy">Френулотомия</a></li>
+                              <li><a href="/services/cyst-removal">Удаление кисты</a></li>
+                              <li><a href="/services/implant-stage-opening">Вскрытие импланта</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-orthodontics"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-orthodontics"
+                        hidden
+                        data-category="orthodontics"
+                      >
+                        <h3 class="mega-menu__category-title">Ортодонтия</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/bite-consult">Консультация ортодонта</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Типы аппаратов</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/braces-metal">Брекеты металлические</a></li>
+                              <li><a href="/services/braces-ceramic">Брекеты керамические</a></li>
+                              <li><a href="/services/aligners">Элайнеры</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Этапы лечения</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/treatment-plan-ortho">Планирование лечения</a></li>
+                              <li><a href="/services/retention">Ретенционный период</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-gums"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-gums"
+                        hidden
+                        data-category="gums"
+                      >
+                        <h3 class="mega-menu__category-title">Лечение дёсен</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/periodontist-consult">Приём периодонтолога</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Терапия пародонта</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/scaling-root-planning">Профессиональная гигиена пародонта</a></li>
+                              <li><a href="/services/periodontitis-treatment">Лечение пародонтита</a></li>
+                              <li><a href="/services/gingivitis-treatment">Лечение гингивита</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Хирургический профиль</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/open-curettage">Открытый кюретаж</a></li>
+                              <li><a href="/services/perio-plastic">Пародонтологическая пластика</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-hygiene"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-hygiene"
+                        hidden
+                        data-category="hygiene"
+                      >
+                        <h3 class="mega-menu__category-title">Гигиена и отбеливание</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/hygiene-package">Комплексная гигиена</a></li>
+                              <li><a href="/services/air-flow-clean">Чистка Air Flow</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Отбеливание</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/office-whitening">Кабинетное отбеливание</a></li>
+                              <li><a href="/services/home-whitening-kit">Домашнее отбеливание по капам</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Дополнительно</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/reminearalization-care">Уход после процедур</a></li>
+                              <li><a href="/services/plaque-indicator">Индикация налёта</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-pediatric"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-pediatric"
+                        hidden
+                        data-category="pediatric"
+                      >
+                        <h3 class="mega-menu__category-title">Детская стоматология</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/kids-first-visit">Первый визит ребёнка</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Лечение молочных зубов</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/kids-filling">Лечение кариеса у детей</a></li>
+                              <li><a href="/services/kids-sealants">Герметизация фиссур</a></li>
+                              <li><a href="/services/kids-extraction-milk">Удаление молочного зуба</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Профилактика и гигиена</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/kids-hygiene">Профессиональная гигиена для детей</a></li>
+                              <li><a href="/services/kids-flouride">Фторирование эмали</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+
+                    <!-- ACF Options: mega_menu_promo -->
+                    <aside class="mega-menu__promo promo-card" aria-label="Текущая акция">
+                      <article class="promo-card__article">
+                        <div class="promo-card__media">
+                          <img class="promo-card__image" src="assets/images/mega-menu-promo.jpg" width="800" height="440" alt="" loading="lazy">
+                          <span class="promo-card__badge promo-card__badge--time">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                              <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Осталось 6 д.</span>
+                          </span>
+                          <span class="promo-card__badge promo-card__badge--discount">−40%</span>
+                        </div>
+                        <div class="promo-card__body">
+                          <h3 class="promo-card__title">Профессиональная чистка зубов</h3>
+                          <p class="promo-card__desc">Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                          <p class="promo-card__price">
+                            <span class="promo-card__price-current">2 500 ₽</span>
+                            <span class="promo-card__price-old">4 200 ₽</span>
+                          </p>
+                          <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                            <span>Записаться</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </article>
+                    </aside>
+                  </div>
+                </div>
+              </li>
               <li class="header__nav-item"><a class="header__nav-link" href="#clinic">О клинике</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#doctors">Врачи</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="/doctors/vrachi.html">Врачи</a></li>
               <li class="header__nav-item"><a class="header__nav-link" href="#offers">Акции</a></li>
               <li class="header__nav-item"><a class="header__nav-link" href="#prices">Цены</a></li>
               <li class="header__nav-item"><a class="header__nav-link" href="#reviews">Отзывы</a></li>
@@ -93,7 +525,32 @@
 
           <nav class="header__menu-nav" aria-label="Мобильная навигация">
             <ul class="header__menu-list">
-              <li><a class="header__menu-link" href="#services">Услуги</a></li>
+              <li class="header__menu-item header__menu-item--has-children">
+                <button
+                  class="header__menu-link header__menu-link--toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="mobile-services-list"
+                  data-mobile-services-trigger
+                >
+                  Услуги
+                  <span class="header__menu-chevron" aria-hidden="true">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="header__submenu" id="mobile-services-list" hidden>
+                  <li><a class="header__submenu-link" href="/services/category/implantation">Имплантация зубов</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/prosthetics">Протезы на имплантах</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/treatment">Лечение зубов</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/surgery">Хирургия</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/orthodontics">Ортодонтия</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/gums">Лечение дёсен</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/hygiene">Гигиена и отбеливание</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/pediatric">Детская стоматология</a></li>
+                </ul>
+              </li>
               <li><a class="header__menu-link" href="#clinic">О клинике</a></li>
               <li><a class="header__menu-link" href="#doctors">Врачи</a></li>
               <li><a class="header__menu-link" href="#offers">Акции</a></li>
@@ -1451,7 +1908,7 @@
 
           <div class="consultation__visual">
             <!-- ACF: consultation_image -->
-            <img class="consultation__image" src="assets/images/clinic-photo.jpg" width="808" height="630" alt="Стоматологический кабинет клиники Даймонд" loading="lazy">
+            <img class="consultation__image" src="assets/images/clinic-photo.png" width="808" height="630" alt="Стоматологический кабинет клиники Даймонд" loading="lazy">
 
             <div class="consultation__widgets">
               <div class="status-pill" data-status-widget data-schedule='{"mon-fri":"09:00-20:00","sat-sun":"09:00-20:00"}'>

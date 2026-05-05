@@ -1,0 +1,97 @@
+/* Блок «Имплантация в сложных случаях» — Framelink 216:9999 / 216:12558 */
+
+.complex-cases {
+  margin: 0;
+  padding: 24px 32px;
+  border-radius: var(--radius-m);
+  background: var(--color-doctors-bg);
+}
+
+.complex-cases__head {
+  margin: 0 0 20px;
+}
+
+.complex-cases__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.complex-cases__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.complex-cases-card {
+  box-sizing: border-box;
+  padding: 21px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: var(--color-bg);
+}
+
+.complex-cases-card__title {
+  margin: 0 0 8px;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+
+.complex-cases-card__text {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.04em;
+  color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .complex-cases {
+    padding: 20px var(--container-padding-mobile);
+  }
+
+  .complex-cases__head {
+    margin-bottom: 12px;
+  }
+
+  .complex-cases__title {
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+  }
+
+  .complex-cases__cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .complex-cases-card {
+    padding: 20px;
+  }
+
+  .complex-cases-card__title {
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: 1.219;
+    letter-spacing: inherit;
+    text-transform: uppercase;
+  }
+
+  .complex-cases-card__text {
+    font-size: var(--fs-xs);
+    letter-spacing: -0.05em;
+    color: var(--color-price-tag-label);
+    line-height: var(--lh-normal);
+  }
+}

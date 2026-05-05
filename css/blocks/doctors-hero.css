@@ -1,0 +1,148 @@
+/* Hero страницы «Врачи» (Framelink 216:10380 десктоп, 216:13900 мобайл). Отдельный блок от .service-hero */
+
+.doctors-hero {
+  margin: 0;
+  padding: 0 20px;
+  background: var(--color-bg);
+}
+
+.doctors-hero__inner {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 613px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+  max-width: min(100%, 1400px);
+  min-height: 523px;
+  margin: 0 auto;
+  padding: clamp(48px, 6vw, 80px) clamp(28px, 5vw, 67px);
+  border-radius: 16px;
+  background: var(--color-stats-bg);
+  overflow: hidden;
+}
+
+.doctors-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.doctors-hero__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.doctors-hero__button {
+  gap: 10px;
+  width: 244px;
+  max-width: 100%;
+  min-height: 51px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.doctors-hero__media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 0;
+}
+
+.doctors-hero__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 720px;
+ 
+}
+
+@media (min-width: 1024px) {
+  .doctors-hero__media img {
+    transform: scale(1.38);
+    position: relative;
+    right: 8%;
+    top: 10px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .doctors-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-height: 0;
+    padding: clamp(32px, 4vw, 48px) clamp(20px, 4vw, 32px);
+    text-align: center;
+  }
+
+  .doctors-hero__content {
+    order: 2;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .doctors-hero__media {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .doctors-hero__media img {
+    max-width: min(480px, 100%);
+  }
+
+  .doctors-hero__button {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctors-hero {
+    padding: 16px var(--container-padding-mobile-fluid);
+    background: transparent;
+  }
+
+  .doctors-hero__inner {
+    gap: 20px;
+    padding: 24px 20px 30px;
+    border-radius: 13px;
+    background: var(--color-bg);
+    box-shadow:
+      0 4px 16px -4px rgb(28 45 107 / 8%),
+      0 24px 80px -12px rgb(28 45 107 / 12%);
+    border: 1px solid var(--color-border);
+  }
+
+  .doctors-hero__content {
+    gap: 14px;
+    width: 100%;
+  }
+
+  .doctors-hero__title {
+    font-size: 24px;
+    line-height: 1.219;
+    text-align: center;
+  }
+
+  .doctors-hero__button {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    min-height: 50px;
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+
+  .doctors-hero__media img {
+    max-width: min(280px, 100%);
+    margin-inline: auto;
+  }
+}

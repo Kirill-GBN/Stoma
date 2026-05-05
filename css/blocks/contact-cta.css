@@ -1,0 +1,150 @@
+/* Завершающий CTA «Не нашли информации» (Framelink 216:10278 / 216:12896). */
+
+.contact-cta {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0 40px;
+  min-height: 163px;
+  border-radius: 16px;
+  background-color: var(--color-primary);
+  background-image: linear-gradient(135deg, rgb(19 61 141 / 100%) 0%, rgb(42 64 144 / 100%) 100%);
+}
+
+.contact-cta__title {
+  margin: 0;
+  flex: 1 1 auto;
+  max-width: 459px;
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-bg);
+}
+
+.contact-cta__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ---------- Кнопки ---------- */
+
+.contact-cta__button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 60px;
+  border: none;
+  font-weight: 600;
+  line-height: 1.219;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 160ms ease, background-color 160ms ease;
+}
+
+.contact-cta__button:hover {
+  opacity: 0.9;
+}
+
+.contact-cta__button:focus-visible {
+  outline: 3px solid var(--color-bg);
+  outline-offset: 2px;
+}
+
+.contact-cta__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.contact-cta__icon svg {
+  display: block;
+}
+
+/* Телефон: белая плашка */
+
+.contact-cta__button--phone {
+  padding: 0 32px;
+  border-radius: 13.578px;
+  background: var(--color-bg);
+  font-family: var(--font-primary);
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: var(--color-primary);
+}
+
+.contact-cta__button--phone .contact-cta__icon {
+  color: var(--color-primary-dark);
+}
+
+/* Сообщение: розовая */
+
+.contact-cta__button--message {
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+}
+
+.contact-cta__button--message .contact-cta__icon {
+  color: var(--color-bg);
+}
+
+@media (max-width: 1023px) {
+  .contact-cta {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 20px;
+    min-height: 0;
+    padding: 24px 20px;
+    text-align: center;
+    background-image: linear-gradient(172deg, rgb(19 61 141 / 100%) 0%, rgb(42 64 144 / 100%) 100%);
+  }
+
+  .contact-cta__title {
+    max-width: none;
+    font-size: 18px;
+  }
+
+  .contact-cta__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .contact-cta__button {
+    width: 100%;
+  }
+
+  .contact-cta__button--phone {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-cta {
+    padding: 30px 16px;
+  }
+
+  .contact-cta__title {
+    font-size: 16px;
+    line-height: 1.219;
+  }
+}

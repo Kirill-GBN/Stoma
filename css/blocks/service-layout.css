@@ -1,0 +1,73 @@
+/* Двухколоночный скелет страницы услуги (Framelink: section 216:9437 — основная колонка ~1092px, aside 280px, зазор ~26px) */
+
+.service-layout {
+  --service-layout-aside-width: /*clamp(280px, 25vw, 360px)*/ 270px; 
+  --service-layout-gap: /*clamp(20px, 2vw, 26px)*/ 20px;
+  --service-layout-sticky-top: calc(var(--header-height-sticky) + 12px);
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  background: var(--color-bg);
+}
+
+.service-layout__inner {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--service-layout-aside-width);
+  gap: var(--service-layout-gap);
+  width: min(100%, var(--container-max));
+}
+
+.service-layout__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  min-width: 0;
+}
+
+/* Обёртка «противопоказания + сложные случаи» — Framelink 216:9999 */
+.service-implant-care {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 60px var(--container-padding-desktop);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-m);
+  background: var(--color-bg);
+}
+
+.service-layout__aside {
+  min-width: 0;
+}
+
+.service-layout__sticky {
+  /* position: sticky; */
+  top: var(--service-layout-sticky-top);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .service-layout__aside {
+    display: none;
+  }
+
+  .service-layout__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-layout {
+    padding-inline: var(--container-padding-mobile-fluid);
+  }
+
+  .service-implant-care {
+    padding: 30px var(--container-padding-mobile);
+  }
+}

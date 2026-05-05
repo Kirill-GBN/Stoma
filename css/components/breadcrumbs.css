@@ -1,0 +1,74 @@
+/* Общий компонент хлебных крошек (.c-breadcrumbs) */
+
+.c-breadcrumbs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  background: var(--color-bg);
+}
+
+.c-breadcrumbs__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+  width: min(100%, var(--container-max));
+  margin: 0 auto;
+  padding: clamp(14px, 3.8vw, 20px) var(--container-padding-desktop);
+  list-style: none;
+}
+
+.c-breadcrumbs__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+}
+
+.c-breadcrumbs__link {
+  color: var(--color-breadcrumb-link);
+  font-size: clamp(13px, 2.95vw, var(--fs-sm));
+  font-weight: 400;
+  line-height: var(--lh-relaxed);
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.c-breadcrumbs__link:hover,
+.c-breadcrumbs__link:focus-visible {
+  text-decoration: underline;
+}
+
+.c-breadcrumbs__separator {
+  margin-inline-start: 3px;
+  margin-inline-end: clamp(4px, 1.2vw, 10px);
+  color: var(--color-price-tag-old);
+  font-size: clamp(13px, 2.95vw, var(--fs-sm));
+  font-weight: 400;
+  line-height: var(--lh-relaxed);
+}
+
+.c-breadcrumbs__current {
+  color: var(--color-primary);
+  font-size: clamp(13px, 2.95vw, var(--fs-sm));
+  font-weight: 400;
+  line-height: var(--lh-relaxed);
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 767px) {
+  .c-breadcrumbs {
+    padding-inline: var(--container-padding-mobile-fluid);
+  }
+
+  .c-breadcrumbs__list {
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-breadcrumbs {
+    padding-inline: var(--container-padding-mobile);
+  }
+}

@@ -1,0 +1,296 @@
+/* Блок «Виды протезов на имплантах» (Framelink 216:10144 / 244:4727 десктоп, 216:12791 мобайл) */
+
+.prosthetics-types {
+  margin: 0;
+  padding: 60px clamp(16px, 5vw, 62px);
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 13px;
+  background: var(--color-bg);
+}
+
+.prosthetics-types__head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+  padding-inline-end: clamp(0px, 3vw, 30px);
+}
+
+.prosthetics-types__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.prosthetics-types__intro {
+  margin: 0;
+  max-width: 62ch;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+
+/* ---------- Панель ---------- */
+
+.prosthetics-types__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 389px);
+  grid-template-rows: auto auto auto;
+  align-items: start;
+  gap: 0 14px;
+  margin: 0;
+}
+
+.prosthetics-types__panel[hidden] {
+  display: none;
+}
+
+.prosthetics-types__panel-title {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.prosthetics-types__panel-text {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 16px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: #171717;
+}
+
+.prosthetics-types__panel-text p {
+  margin: 0 0 30px;
+}
+
+.prosthetics-types__panel-text p:last-child {
+  margin-bottom: 0;
+}
+
+.prosthetics-types__panel-button {
+  grid-column: 1;
+  grid-row: 3;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-width: 225px;
+  min-height: 51px;
+  margin-top: 30px;
+  padding: 16px;
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 10px;
+  background: transparent;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.prosthetics-types__panel-button:hover {
+  background: rgb(19 61 141 / 4%);
+}
+
+.prosthetics-types__panel-button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.prosthetics-types__panel-button svg {
+  flex-shrink: 0;
+}
+
+.prosthetics-types__panel-media {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  margin: 0;
+  border-radius: 11px;
+  overflow: hidden;
+  aspect-ratio: 389 / 244;
+  align-self: start;
+  justify-self: end;
+}
+
+.prosthetics-types__panel-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Figma 216:10159 / 244:4742: Rectangle 389×244, FILL + cover, без manual crop — квадратные ассеты дают вертикальный crop; позиции подобраны под макет */
+  object-position: center center;
+}
+
+#prosthetics-types-panel-1 .prosthetics-types__panel-media img {
+  object-position: center 42%;
+}
+
+#prosthetics-types-panel-2 .prosthetics-types__panel-media img {
+  object-position: center 48%;
+}
+
+.prosthetics-types__panel:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ---------- Адаптив ---------- */
+
+@media (min-width: 1024px) {
+  .prosthetics-types {
+    padding-block: 40px;
+  }
+
+  .prosthetics-types__head {
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+
+  .prosthetics-types__intro {
+    line-height: 1.28;
+  }
+
+  .prosthetics-types__tabs.c-tabs {
+    gap: 8px;
+  }
+
+  .prosthetics-types__panel-text {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.27;
+  }
+
+  .prosthetics-types__panel-text p {
+    margin-bottom: 12px;
+  }
+
+  .prosthetics-types__panel-button {
+    margin-top: 14px;
+    min-height: 46px;
+    padding: 12px 14px;
+  }
+
+  .prosthetics-types__panel-media {
+    aspect-ratio: 389 / 226;
+    max-width: 389px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .prosthetics-types {
+    padding: 40px clamp(16px, 4vw, 32px);
+  }
+
+  .prosthetics-types__panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 0;
+  }
+
+  .prosthetics-types__panel-title {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .prosthetics-types__panel-media {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 16px;
+    aspect-ratio: 305 / 180;
+    border-radius: 13px;
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .prosthetics-types__panel-text {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .prosthetics-types__panel-text p {
+    margin-bottom: 16px;
+  }
+
+  .prosthetics-types__panel-button {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Мобайл 216:12808 — контейнер ~258×180 (full width − паддинги), тот же FILL cover */
+  #prosthetics-types-panel-1 .prosthetics-types__panel-media img {
+    object-position: center 40%;
+  }
+
+  #prosthetics-types-panel-2 .prosthetics-types__panel-media img {
+    object-position: center 46%;
+  }
+
+  .prosthetics-types {
+    padding: 30px 16px;
+  }
+
+  .prosthetics-types__head {
+    gap: 10px;
+    margin-bottom: 17px;
+    padding-inline-end: 0;
+  }
+
+  .prosthetics-types__title {
+    font-size: 16px;
+  }
+
+  .prosthetics-types__intro {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .prosthetics-types__tabs.c-tabs {
+    gap: 17px;
+  }
+
+  .prosthetics-types__panel-text {
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+  }
+
+  .prosthetics-types__panel-title {
+    min-width: 0;
+  }
+}

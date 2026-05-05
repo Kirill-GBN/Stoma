@@ -1,0 +1,57 @@
+/* Сетка карточек врачей на странице «Врачи». Токены: Framelink 216:10393 / 216:13915 */
+
+.doctors-grid {
+  box-sizing: border-box;
+  margin-inline: auto;
+  overflow: visible;
+  width: min(1400px, calc(100% - 40px));
+  padding: 60px 62px;
+  border-radius: 13px;
+  background: var(--color-doctors-bg);
+}
+
+.doctors-grid__title {
+  margin: 0;
+}
+
+.doctors-grid__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doctors-grid__item {
+  display: flex;
+  margin: 0;
+  min-width: 0;
+}
+
+.doctors-grid__item .doctor-row {
+  flex: 1;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .doctors-grid {
+    padding: 40px 24px;
+  }
+
+  .doctors-grid__list {
+    gap: 40px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctors-grid {
+    width: min(1400px, calc(100% - 32px));
+    padding: 30px 16px;
+  }
+
+  .doctors-grid__list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

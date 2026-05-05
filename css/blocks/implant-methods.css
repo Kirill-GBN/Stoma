@@ -1,0 +1,386 @@
+/* Блок «Методы имплантации» (Framelink 216:10128 / 236:4220 / 236:4246 десктоп, 216:12691 мобайл) */
+
+.implant-methods {
+  margin: 0;
+  padding: 60px clamp(16px, 5vw, 62px);
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 13px;
+  background: var(--color-bg);
+}
+
+.implant-methods__head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+  padding-inline-end: clamp(0px, 3vw, 30px);
+}
+
+.implant-methods__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.implant-methods__intro {
+  margin: 0;
+  max-width: 62ch;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+
+/* ---------- Панель ---------- */
+
+.implant-methods__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 409px);
+  grid-template-rows: auto auto auto;
+  align-items: start;
+  gap: 0 clamp(32px, 8vw, 128px);
+  margin: 0;
+}
+
+.implant-methods__panel[hidden] {
+  display: none;
+}
+
+.implant-methods__panel-head {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  min-width: 0;
+}
+
+.implant-methods__panel-price {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0 0 16px;
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.22;
+  white-space: nowrap;
+}
+
+.implant-methods__panel-text {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 16px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: #171717;
+}
+
+.implant-methods__panel-text p {
+  margin: 0 0 30px;
+}
+
+.implant-methods__panel-text p:last-child {
+  margin-bottom: 0;
+}
+
+.implant-methods__panel-button {
+  grid-column: 1;
+  grid-row: 3;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-width: 218px;
+  min-height: 51px;
+  margin-top: 30px;
+  padding: 16px;
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 10px;
+  background: transparent;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.implant-methods__panel-button:hover {
+  background: rgb(19 61 141 / 4%);
+}
+
+.implant-methods__panel-button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.implant-methods__panel-button svg {
+  flex-shrink: 0;
+}
+
+.implant-methods__panel-media {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  border-radius: 11px;
+  overflow: hidden;
+  aspect-ratio: 409 / 244;
+}
+
+.implant-methods__panel-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Кадрирование под макет 409×244 (Figma: узел 216:10143 / 236:4235 — FILL cover, 236:4261 — crop по вертикали) */
+#implant-methods-panel-1 .implant-methods__panel-media img {
+  object-position: center 58%;
+}
+
+#implant-methods-panel-2 .implant-methods__panel-media img {
+  object-position: center 50%;
+}
+
+#implant-methods-panel-3 .implant-methods__panel-media img {
+  object-position: 28% 50%;
+  transform: scaleX(-1);
+}
+
+.implant-methods__panel-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.implant-methods__panel-price-prefix {
+  text-transform: lowercase;
+  color: var(--color-primary);
+}
+
+.implant-methods__panel-price-value {
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.implant-methods__panel:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ---------- Адаптив ---------- */
+
+/* Десктоп: компактная высота блока (~578px в макете Framelink 216:10128) */
+@media (min-width: 1024px) {
+  .implant-methods {
+    padding-block: 40px;
+  }
+
+  .implant-methods__head {
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+
+  .implant-methods__intro {
+    line-height: 1.28;
+  }
+
+  .implant-methods__tabs.c-tabs {
+    gap: 8px;
+  }
+
+  .implant-methods__panel-price {
+    margin-bottom: 10px;
+  }
+
+  .implant-methods__panel-text {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.27;
+  }
+
+  .implant-methods__panel-text p {
+    margin-bottom: 12px;
+  }
+
+  .implant-methods__panel-button {
+    margin-top: 14px;
+    min-height: 46px;
+    padding: 12px 14px;
+  }
+
+  .implant-methods__panel-media {
+    aspect-ratio: 409 / 226;
+    max-width: 409px;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 1023px) {
+  .implant-methods {
+    padding: 40px clamp(16px, 4vw, 32px);
+  }
+
+  .implant-methods__panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 0;
+  }
+
+  .implant-methods__panel-head {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .implant-methods__panel-price {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+    margin: 16px 0 0;
+  }
+
+  .implant-methods__panel-media {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 16px;
+    aspect-ratio: 305 / 180;
+    border-radius: 13px;
+  }
+
+  .implant-methods__panel-text {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .implant-methods__panel-text p {
+    margin-bottom: 16px;
+  }
+
+  .implant-methods__panel-button {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .implant-methods {
+    padding: 30px 16px;
+  }
+
+  .implant-methods__head {
+    gap: 10px;
+    margin-bottom: 17px;
+    padding-inline-end: 0;
+  }
+
+  .implant-methods__title {
+    font-size: 16px;
+  }
+
+  .implant-methods__intro {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .implant-methods__tabs.c-tabs {
+    gap: 17px;
+  }
+
+  .implant-methods__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .implant-methods__panel-head {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .implant-methods__panel-price {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+  }
+
+  .implant-methods__panel-media {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 16px;
+  }
+
+  .implant-methods__panel-text {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+  }
+
+  .implant-methods__panel-button {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    margin-top: 20px;
+  }
+
+  .implant-methods__panel-title {
+    min-width: 0;
+  }
+
+  .implant-methods__panel-price {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.219;
+    letter-spacing: normal;
+  }
+
+  .implant-methods__panel-price-prefix {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+  }
+
+  .implant-methods__panel-price-value {
+    font-family: inherit;
+    font-size: inherit;
+  }
+}

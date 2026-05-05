@@ -1,0 +1,121 @@
+/* Обёртка «Прайс на имплантацию» (Framelink 216:9659 десктоп, 216:12105 мобайл) */
+
+.service-pricing {
+  margin: 0;
+  border-radius: 13px;
+  background: #eeeef5;
+}
+
+.service-pricing__head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 19px;
+}
+
+.service-pricing__title {
+  margin: 0;
+  padding: 10px 0 0;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.service-pricing__intro {
+  margin: 0;
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.service-pricing__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-pricing__list > li {
+  margin: 0;
+  min-width: 0;
+}
+
+/* В макете страницы услуги — только обводка, без тени (см. 216:9659) */
+.service-pricing .price-card {
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+
+.service-pricing__disclaimer {
+  margin: 30px 0 0;
+  color: rgba(19, 61, 141, 0.8);
+  font-size: var(--fs-xs);
+  line-height: 1.333;
+}
+
+.service-pricing__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-pricing__button {
+  width: min(258px, 100%);
+  min-height: 50px;
+  gap: 10px;
+}
+
+.service-pricing__button svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 767px) {
+  .service-pricing {
+    padding: 30px 16px;
+  }
+
+  .service-pricing__head {
+    margin-bottom: 10px;
+  }
+
+  .service-pricing__title {
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.219;
+  }
+
+  .service-pricing__intro {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .service-pricing__disclaimer {
+    margin-top: 14px;
+    font-size: 11px;
+    line-height: 1.455;
+  }
+
+  .service-pricing__cta {
+    margin-top: 16px;
+  }
+
+  .service-pricing__button {
+    width: 100%;
+    min-height: 46px;
+  }
+}
+
+@media (min-width: 768px) {
+  .service-pricing {
+    padding: 60px 62px;
+  }
+}

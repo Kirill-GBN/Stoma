@@ -1,0 +1,75 @@
+/* Блок «Клинические случаи» (Framelink 216:10182 десктоп, 216:12710 мобайл). Панель — .c-info-panel */
+
+.clinical-cases {
+  margin: 0;
+  padding: 60px clamp(16px, 5vw, 62px);
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 13px;
+  background: var(--color-bg);
+}
+
+.clinical-cases__head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.clinical-cases__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.clinical-cases__intro {
+  margin: 0;
+  max-width: 62ch;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.clinical-cases__tabs.c-tabs {
+  gap: 30px;
+}
+
+.clinical-cases__panel[hidden] {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .clinical-cases {
+    padding: 40px clamp(16px, 4vw, 32px);
+  }
+}
+
+@media (max-width: 767px) {
+  .clinical-cases {
+    padding: 30px 16px;
+  }
+
+  .clinical-cases__tabs.c-tabs {
+    gap: 17px;
+  }
+
+  .clinical-cases__head {
+    margin-bottom: 17px;
+  }
+
+  .clinical-cases__title {
+    font-size: 16px;
+  }
+
+  .clinical-cases__intro {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+}

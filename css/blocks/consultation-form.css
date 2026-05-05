@@ -1,0 +1,441 @@
+/* Блок «Запись на консультацию» (Framelink 216:10100 десктоп, 216:12654 мобайл) */
+
+.consultation-form {
+  margin: 0;
+}
+
+.consultation-form__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgb(19 61 141 / 10%);
+  border-radius: 13px;
+  box-shadow:
+    0 4px 16px -4px rgb(28 45 107 / 8%),
+    0 24px 80px -12px rgb(28 45 107 / 16%);
+}
+
+/* ---------- Левая колонка (форма) ---------- */
+
+.consultation-form__form-side {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(40px, 5vw, 60px) clamp(28px, 5vw, 62px);
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.consultation-form__title {
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-bg);
+}
+
+.consultation-form__intro {
+  margin: 0 0 30px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: #eeeef5;
+}
+
+/* ---------- Форма ---------- */
+
+.consultation-form__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.consultation-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.consultation-form__field {
+  min-width: 0;
+  margin: 0;
+}
+
+.consultation-form__input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 55px;
+  padding: 15px 18px;
+  border: 1.5px solid #e0e6f0;
+  border-radius: 10px;
+  background: var(--color-bg);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: -0.015625em;
+  color: var(--color-primary);
+  transition: box-shadow 160ms ease;
+}
+
+.consultation-form__input::placeholder {
+  color: rgb(28 45 107 / 50%);
+}
+
+.consultation-form__input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(207 80 147 / 30%);
+}
+
+.consultation-form__consent {
+  position: relative;
+  margin: 16px 0 0;
+}
+
+.consultation-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.consultation-form__consent-label {
+  position: relative;
+  display: block;
+  padding-left: 26px;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
+.consultation-form__consent-label::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d1d5dc;
+  border-radius: 4px;
+  background: transparent;
+  content: "";
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.consultation-form__consent-label::after {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 8px;
+  height: 5px;
+  border-left: 2px solid var(--color-bg);
+  border-bottom: 2px solid var(--color-bg);
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: "";
+  transition: opacity 160ms ease;
+}
+
+.consultation-form__checkbox:checked + .consultation-form__consent-label::before {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.consultation-form__checkbox:checked + .consultation-form__consent-label::after {
+  opacity: 1;
+}
+
+.consultation-form__checkbox:focus-visible + .consultation-form__consent-label::before {
+  outline: 3px solid rgb(255 255 255 / 60%);
+  outline-offset: 2px;
+}
+
+.consultation-form__consent-link {
+  color: var(--color-bg);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.consultation-form__consent-link:hover,
+.consultation-form__consent-link:focus-visible {
+  opacity: 0.85;
+}
+
+.consultation-form__submit {
+  width: 100%;
+  margin-top: 21px;
+  gap: 10px;
+  min-height: 46px;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.consultation-form__submit svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+/* ---------- Правая колонка (фото) ---------- */
+
+.consultation-form__visual-side {
+  position: relative;
+  min-height: 630px;
+  background-color: #d8d8d8;
+  background-image: url("../../assets/images/clinic-photo.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.consultation-form__overlays {
+  position: absolute;
+  right: clamp(16px, 3vw, 28px);
+  bottom: clamp(16px, 3vw, 40px);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.consultation-form__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 21px;
+  min-height: 47px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 13px;
+  background: rgb(255 255 255 / 86%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.consultation-form__status-dot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  animation: consultation-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes consultation-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.45);
+    opacity: 0.65;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .consultation-form__status-dot {
+    animation: none;
+  }
+}
+
+.consultation-form__appointment {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 17px 20px;
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 12px;
+  background: rgb(255 255 255 / 86%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  font-family: var(--font-primary);
+}
+
+.consultation-form__appointment-label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: -0.04em;
+  color: rgb(23 23 23 / 50%);
+}
+
+.consultation-form__appointment-value {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* ---------- Адаптив ---------- */
+
+@media (max-width: 1024px) {
+  .consultation-form__inner {
+    grid-template-columns: 1fr;
+    box-shadow: 0 24px 80px rgb(28 45 107 / 16%);
+  }
+
+  .consultation-form__visual-side {
+    order: 1;
+    min-height: 220px;
+  }
+
+  .consultation-form__form-side {
+    order: 2;
+    padding: clamp(32px, 4vw, 40px) clamp(20px, 3vw, 24px);
+  }
+
+  .consultation-form__overlays {
+    top: clamp(72px, 12vw, 88px);
+    right: 12px;
+    bottom: auto;
+    left: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .consultation-form__inner {
+    border-radius: 13px;
+  }
+
+  .consultation-form__visual-side {
+    min-height: 220px;
+  }
+
+  .consultation-form__form-side {
+    padding: 30px 16px;
+  }
+
+  .consultation-form__title {
+    font-size: 16px;
+  }
+
+  .consultation-form__intro {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+  }
+
+  .consultation-form__input {
+    height: 46px;
+    padding-inline: 14px;
+  }
+
+  .consultation-form__consent-label {
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+  }
+
+  .consultation-form__submit.button {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 46px;
+    margin-top: 20px;
+    padding-block: 12px;
+    padding-inline: 12px;
+    white-space: normal;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .consultation-form__submit.button > span {
+    min-width: 0;
+    text-wrap: balance;
+  }
+
+  .consultation-form__overlays {
+    top: clamp(64px, 11vw, 80px);
+    right: 20px;
+    bottom: auto;
+    left: 20px;
+    gap: 8px;
+    align-items: stretch;
+    width: auto;
+    max-width: none;
+  }
+
+  .consultation-form__status {
+    font-size: 12px;
+    padding-block: 10px;
+    min-height: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .consultation-form__appointment {
+    padding: 13px 17px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .consultation-form__appointment-label {
+    font-size: 14px;
+  }
+
+  .consultation-form__appointment-value {
+    font-size: 14px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.219;
+  }
+}
+
+@media (max-width: 375px) {
+  .consultation-form__form-side {
+    padding: 24px 12px;
+  }
+
+  .consultation-form__input {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .consultation-form__submit.button {
+    padding: 10px;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}

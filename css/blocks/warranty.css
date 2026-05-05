@@ -1,0 +1,149 @@
+/* Блок «Срок службы и гарантии» — Framelink 216:9788 / 216:12365 */
+
+.warranty {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 60px 62px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-m);
+  background: var(--color-bg);
+}
+
+.warranty__head {
+  margin: 0 0 20px;
+}
+
+.warranty__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.warranty__features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.warranty__feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  border-radius: var(--radius-m);
+  background: var(--color-doctors-bg);
+}
+
+.warranty__feature-icon {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.warranty__feature-icon svg {
+  display: block;
+}
+
+.warranty__feature-text {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+
+.warranty__description {
+  margin: 0 0 20px;
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  letter-spacing: -0.05em;
+  color: var(--color-text);
+}
+
+.warranty__description p {
+  margin: 0;
+}
+
+.warranty__description p + p {
+  margin-top: 10px;
+}
+
+.warranty__cta {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.warranty__button {
+  gap: 10px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 767px) {
+  .warranty {
+    padding: 30px var(--container-padding-mobile);
+  }
+
+  .warranty__head {
+    margin-bottom: 10px;
+  }
+
+  .warranty__title {
+    font-size: var(--fs-md);
+  }
+
+  .warranty__features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .warranty__feature {
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .warranty__feature-text {
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+  }
+
+  .warranty__description {
+    margin-bottom: 20px;
+    font-size: var(--fs-xs);
+  }
+
+  .warranty__description p + p {
+    margin-top: 12px;
+  }
+
+  .warranty__cta {
+    justify-content: stretch;
+  }
+
+  .warranty__button {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    min-height: 50px;
+  }
+}
