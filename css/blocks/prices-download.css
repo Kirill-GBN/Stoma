@@ -1,0 +1,56 @@
+.prices-download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.prices-download__button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: min(100%, 420px);
+  min-height: 52px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: var(--radius-m);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-primary);
+  font-size: clamp(14px, 3.2vw, 16px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+}
+
+.prices-download__button:hover,
+.prices-download__button:focus-visible {
+  filter: brightness(1.06);
+  text-decoration: none;
+}
+
+.prices-download__icon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .prices-download {
+    padding-inline: var(--container-padding-mobile-fluid);
+  }
+
+  .prices-download__button {
+    width: 100%;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .prices-download {
+    padding-inline: var(--container-padding-mobile);
+  }
+}

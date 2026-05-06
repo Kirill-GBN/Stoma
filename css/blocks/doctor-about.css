@@ -1,0 +1,211 @@
+/* Блок «О враче» (страница врача). Двухколоночно только список навыков — Framelink 216:11054. */
+
+.doctor-about {
+  margin: 0;
+  padding: 60px 62px;
+  border-radius: var(--radius-m);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-soft);
+}
+
+.doctor-about__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.doctor-about__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.doctor-about__main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.doctor-about__intro {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+.doctor-about__intro strong {
+  font-weight: 600;
+}
+
+.doctor-about__skills-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.doctor-about__skills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.doctor-about__skills li {
+  position: relative;
+  break-inside: avoid;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-primary);
+}
+
+.doctor-about__skills li:last-child {
+  margin-bottom: 0;
+}
+
+.doctor-about__skills li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.doctor-about__accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doctor-about__accordions > li {
+  margin: 0;
+}
+
+.doctor-about .c-accordion__title {
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.doctor-about .c-accordion__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.doctor-about .c-accordion__panel .doctor-about__timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doctor-about__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-primary);
+}
+
+.doctor-about__timeline-year {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* .doctor-about__sidebar {
+  position: static;
+} */
+
+.doctor-about__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--color-bg);
+  box-shadow: 0 4px 16px -4px rgb(28 45 107 / 6%);
+  border: 1px solid var(--color-border-soft);
+}
+
+.doctor-about__card-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 313 / 412;
+  object-fit: cover;
+  object-position: center;
+}
+
+.doctor-about__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 30px 30px;
+}
+
+.doctor-about__card-name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.doctor-about__card-role {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.doctor-about__card-button {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  .doctor-about__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-about__skills {
+    column-count: 1;
+  }
+
+  .doctor-about__sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctor-about {
+    padding: 24px 16px;
+  }
+
+  .doctor-about__title {
+    font-size: 16px;
+  }
+}

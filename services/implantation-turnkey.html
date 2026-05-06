@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/blocks/mega-menu.css">
     <link rel="stylesheet" href="../css/blocks/promo.css">
     <link rel="stylesheet" href="../css/components/breadcrumbs.css">
+    <link rel="stylesheet" href="../css/components/accordion.css">
     <link rel="stylesheet" href="../css/blocks/service-hero.css">
     <link rel="stylesheet" href="../css/blocks/section-nav.css">
     <link rel="stylesheet" href="../css/blocks/service-layout.css">
@@ -1864,66 +1865,6 @@
             </section>
 
 
-            <!-- ACF: free_consultation_block -->
-            <section class="free-consultation" id="free-consultation" aria-labelledby="free-consultation-title">
-              <div class="free-consultation__inner">
-                <div class="free-consultation__form-side">
-                  <!-- ACF: free_consultation_title (WYSIWYG — span.free-consultation__title-accent вокруг «бесплатно») -->
-                  <h2 class="free-consultation__title" id="free-consultation-title">
-                    Консультация, снимок и план лечения <span class="free-consultation__title-accent">бесплатно</span>
-                  </h2>
-
-                  <!-- ACF: free_consultation_intro -->
-                  <p class="free-consultation__intro">Оставьте свой номер, мы свяжемся и подберём для вас удобное время приёма</p>
-
-                  <form class="free-consultation__form" novalidate>
-                    <div class="free-consultation__field">
-                      <label class="visually-hidden" for="free-consultation-phone">Телефон</label>
-                      <input
-                        class="free-consultation__input"
-                        type="tel"
-                        id="free-consultation-phone"
-                        name="phone"
-                        placeholder="Телефон"
-                        autocomplete="tel"
-                        inputmode="tel"
-                        required
-                        pattern="[\d\s\-\(\)\+]{10,20}"
-                      >
-                    </div>
-
-                    <button class="free-consultation__submit button button--primary button--with-arrow" type="submit">
-                      <span>Записаться на приём</span>
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
-                        <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </button>
-
-                    <!-- ACF: free_consultation_disclaimer -->
-                    <p class="free-consultation__disclaimer">Записываясь на диагностику, вы даёте согласие на обработку своих данных и условия услуги диагностики состояния зубов</p>
-                  </form>
-
-                  <!-- ACF: free_consultation_phone (Group: prefix_text + phone_display + phone_link) -->
-                  <div class="free-consultation__call">
-                    <div class="free-consultation__call-lead">
-                      <span class="free-consultation__call-icon" aria-hidden="true">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14.5 11.36V13.36C14.5 13.74 14.35 14.1 14.08 14.37C13.81 14.64 13.45 14.79 13.07 14.79C11.05 14.57 9.11 13.87 7.43 12.76C5.86 11.74 4.55 10.43 3.53 8.86C2.42 7.18 1.72 5.24 1.5 3.21C1.5 2.84 1.65 2.48 1.92 2.21C2.19 1.94 2.55 1.79 2.93 1.79H4.93C5.27 1.79 5.59 1.92 5.84 2.16C6.09 2.4 6.24 2.71 6.27 3.04C6.32 3.71 6.43 4.37 6.6 5.01C6.66 5.24 6.65 5.49 6.58 5.71C6.51 5.93 6.38 6.13 6.2 6.28L5.36 7.12C6.31 8.81 7.69 10.19 9.38 11.14L10.22 10.3C10.37 10.12 10.57 9.99 10.79 9.92C11.01 9.85 11.26 9.84 11.49 9.9C12.13 10.07 12.79 10.18 13.46 10.23C13.79 10.26 14.1 10.41 14.34 10.66C14.58 10.91 14.71 11.23 14.5 11.36Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                      </span>
-                      <span class="free-consultation__call-text">Или позвоните нам сами —</span>
-                    </div>
-                    <a class="free-consultation__call-link" href="tel:+74991107719">+7 (499) 110-77-19</a>
-                  </div>
-                </div>
-
-                <!-- ACF: free_consultation_photo — background-image на колонке -->
-                <div class="free-consultation__visual-side" aria-hidden="true"></div>
-              </div>
-            </section>
-
-
             <!-- ACF: prosthetics_types_block -->
             <section class="prosthetics-types" id="prosthetics-types" aria-labelledby="prosthetics-types-title">
               <header class="prosthetics-types__head">
@@ -2003,6 +1944,67 @@
                     </svg>
                   </a>
                 </article>
+              </div>
+            </section>
+
+            
+
+            <!-- ACF: free_consultation_block -->
+            <section class="free-consultation" id="free-consultation" aria-labelledby="free-consultation-title">
+              <div class="free-consultation__inner">
+                <div class="free-consultation__form-side">
+                  <!-- ACF: free_consultation_title (WYSIWYG — span.free-consultation__title-accent вокруг «бесплатно») -->
+                  <h2 class="free-consultation__title" id="free-consultation-title">
+                    Консультация, снимок и план лечения <span class="free-consultation__title-accent">бесплатно</span>
+                  </h2>
+
+                  <!-- ACF: free_consultation_intro -->
+                  <p class="free-consultation__intro">Оставьте свой номер, мы свяжемся и подберём для вас удобное время приёма</p>
+
+                  <form class="free-consultation__form" novalidate>
+                    <div class="free-consultation__field">
+                      <label class="visually-hidden" for="free-consultation-phone">Телефон</label>
+                      <input
+                        class="free-consultation__input"
+                        type="tel"
+                        id="free-consultation-phone"
+                        name="phone"
+                        placeholder="Телефон"
+                        autocomplete="tel"
+                        inputmode="tel"
+                        required
+                        pattern="[\d\s\-\(\)\+]{10,20}"
+                      >
+                    </div>
+
+                    <button class="free-consultation__submit button button--primary button--with-arrow" type="submit">
+                      <span>Записаться на приём</span>
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                        <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+
+                    <!-- ACF: free_consultation_disclaimer -->
+                    <p class="free-consultation__disclaimer">Записываясь на диагностику, вы даёте согласие на обработку своих данных и условия услуги диагностики состояния зубов</p>
+                  </form>
+
+                  <!-- ACF: free_consultation_phone (Group: prefix_text + phone_display + phone_link) -->
+                  <div class="free-consultation__call">
+                    <div class="free-consultation__call-lead">
+                      <span class="free-consultation__call-icon" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.5 11.36V13.36C14.5 13.74 14.35 14.1 14.08 14.37C13.81 14.64 13.45 14.79 13.07 14.79C11.05 14.57 9.11 13.87 7.43 12.76C5.86 11.74 4.55 10.43 3.53 8.86C2.42 7.18 1.72 5.24 1.5 3.21C1.5 2.84 1.65 2.48 1.92 2.21C2.19 1.94 2.55 1.79 2.93 1.79H4.93C5.27 1.79 5.59 1.92 5.84 2.16C6.09 2.4 6.24 2.71 6.27 3.04C6.32 3.71 6.43 4.37 6.6 5.01C6.66 5.24 6.65 5.49 6.58 5.71C6.51 5.93 6.38 6.13 6.2 6.28L5.36 7.12C6.31 8.81 7.69 10.19 9.38 11.14L10.22 10.3C10.37 10.12 10.57 9.99 10.79 9.92C11.01 9.85 11.26 9.84 11.49 9.9C12.13 10.07 12.79 10.18 13.46 10.23C13.79 10.26 14.1 10.41 14.34 10.66C14.58 10.91 14.71 11.23 14.5 11.36Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span class="free-consultation__call-text">Или позвоните нам сами —</span>
+                    </div>
+                    <a class="free-consultation__call-link" href="tel:+74991107719">+7 (499) 110-77-19</a>
+                  </div>
+                </div>
+
+                <!-- ACF: free_consultation_photo — background-image на колонке -->
+                <div class="free-consultation__visual-side" aria-hidden="true"></div>
               </div>
             </section>
 
@@ -2294,96 +2296,96 @@
               <!-- ACF: faq_items (Repeater) -->
               <ul class="faq__list">
                 <li class="faq__item">
-                  <details class="faq__details" open>
-                    <summary class="faq__summary">
-                      <span class="faq__question">Больно ли делать имплантацию?</span>
-                      <span class="faq__icon" aria-hidden="true">
+                  <details class="c-accordion__item" name="faq" open>
+                    <summary class="c-accordion__trigger">
+                      <span class="c-accordion__title">Больно ли делать имплантацию?</span>
+                      <span class="c-accordion__icon" aria-hidden="true">
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
                     </summary>
-                    <div class="faq__answer">
+                    <div class="c-accordion__panel">
                       <p>Нет. Операция проводится под местной анестезией — пациент не чувствует боли. Некоторые ощущают лёгкое давление. После операции могут быть умеренный дискомфорт и отёк в течение 2–4 дней, которые снимаются стандартными обезболивающими. По желанию возможна седация.</p>
                     </div>
                   </details>
                 </li>
 
                 <li class="faq__item">
-                  <details class="faq__details">
-                    <summary class="faq__summary">
-                      <span class="faq__question">Сколько служит имплант?</span>
-                      <span class="faq__icon" aria-hidden="true">
+                  <details class="c-accordion__item" name="faq">
+                    <summary class="c-accordion__trigger">
+                      <span class="c-accordion__title">Сколько служит имплант?</span>
+                      <span class="c-accordion__icon" aria-hidden="true">
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
                     </summary>
-                    <div class="faq__answer">
+                    <div class="c-accordion__panel">
                       <p>Заглушка ответа — реальный текст придёт через ACF. Современные импланты при правильном уходе и регулярных профилактических осмотрах служат пожизненно. Производители дают пожизненную гарантию на сами импланты, клиника даёт расширенную гарантию на работу.</p>
                     </div>
                   </details>
                 </li>
 
                 <li class="faq__item">
-                  <details class="faq__details">
-                    <summary class="faq__summary">
-                      <span class="faq__question">Можно ли оформить имплант в рассрочку?</span>
-                      <span class="faq__icon" aria-hidden="true">
+                  <details class="c-accordion__item" name="faq">
+                    <summary class="c-accordion__trigger">
+                      <span class="c-accordion__title">Можно ли оформить имплант в рассрочку?</span>
+                      <span class="c-accordion__icon" aria-hidden="true">
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
                     </summary>
-                    <div class="faq__answer">
+                    <div class="c-accordion__panel">
                       <p>Заглушка ответа.</p>
                     </div>
                   </details>
                 </li>
 
                 <li class="faq__item">
-                  <details class="faq__details">
-                    <summary class="faq__summary">
-                      <span class="faq__question">Есть ли гарантия на имплантацию?</span>
-                      <span class="faq__icon" aria-hidden="true">
+                  <details class="c-accordion__item" name="faq">
+                    <summary class="c-accordion__trigger">
+                      <span class="c-accordion__title">Есть ли гарантия на имплантацию?</span>
+                      <span class="c-accordion__icon" aria-hidden="true">
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
                     </summary>
-                    <div class="faq__answer">
+                    <div class="c-accordion__panel">
                       <p>Заглушка ответа.</p>
                     </div>
                   </details>
                 </li>
 
                 <li class="faq__item">
-                  <details class="faq__details">
-                    <summary class="faq__summary">
-                      <span class="faq__question">Через сколько можно установить имплант после удаления зуба?</span>
-                      <span class="faq__icon" aria-hidden="true">
+                  <details class="c-accordion__item" name="faq">
+                    <summary class="c-accordion__trigger">
+                      <span class="c-accordion__title">Через сколько можно установить имплант после удаления зуба?</span>
+                      <span class="c-accordion__icon" aria-hidden="true">
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
                     </summary>
-                    <div class="faq__answer">
+                    <div class="c-accordion__panel">
                       <p>Заглушка ответа.</p>
                     </div>
                   </details>
                 </li>
 
                 <li class="faq__item">
-                  <details class="faq__details">
-                    <summary class="faq__summary">
-                      <span class="faq__question">Сколько времени занимает лечение?</span>
-                      <span class="faq__icon" aria-hidden="true">
+                  <details class="c-accordion__item" name="faq">
+                    <summary class="c-accordion__trigger">
+                      <span class="c-accordion__title">Сколько времени занимает лечение?</span>
+                      <span class="c-accordion__icon" aria-hidden="true">
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
                     </summary>
-                    <div class="faq__answer">
+                    <div class="c-accordion__panel">
                       <p>Заглушка ответа.</p>
                     </div>
                   </details>

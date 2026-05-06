@@ -1,4 +1,4 @@
-/* FAQ (Framelink 216:10265 десктоп, 216:12843 мобайл). Нативный <details>/<summary>, без JS. */
+/* FAQ — секция и список. Элементы аккордеона: .c-accordion__* (components/accordion.css). */
 
 .faq {
   margin: 0;
@@ -7,7 +7,6 @@
   background: var(--color-doctors-bg);
 }
 
-/* Главная: ширина как у rating / services (контент — max 1440px + боковые отступы) */
 .faq-page-wrap {
   display: flex;
   justify-content: center;
@@ -52,8 +51,6 @@
   color: var(--color-text);
 }
 
-/* ---------- Список ---------- */
-
 .faq__list {
   display: flex;
   flex-direction: column;
@@ -66,131 +63,6 @@
 .faq__item {
   margin: 0;
 }
-
-/* ---------- Карточка ---------- */
-
-.faq__details {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-m);
-  background: var(--color-bg);
-  overflow: hidden;
-}
-
-.faq__details:not([open]) {
-  padding: 30px 19px;
-}
-
-.faq__details[open] {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 29px 19px;
-}
-
-.faq__details[open] .faq__summary {
-  gap: 21px;
-}
-
-/* ---------- Summary ---------- */
-
-.faq__summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
-  transition: color 160ms ease;
-}
-
-.faq__summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq__summary::marker {
-  display: none;
-  content: "";
-}
-
-.faq__summary:focus-visible {
-  outline: 3px solid var(--color-focus);
-  outline-offset: 2px;
-  border-radius: 10px;
-}
-
-.faq__question {
-  flex: 1 1 auto;
-  font-family: var(--font-heading);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.219;
-  text-transform: uppercase;
-  color: var(--color-primary);
-  transition: color 160ms ease;
-}
-
-.faq__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  color: var(--color-primary);
-  transition: transform 200ms ease, color 160ms ease;
-}
-
-.faq__icon svg {
-  display: block;
-}
-
-/* ---------- Открыто ---------- */
-
-.faq__details[open] .faq__question {
-  color: var(--color-accent);
-}
-
-.faq__details[open] .faq__icon {
-  transform: rotate(180deg);
-  color: var(--color-accent);
-}
-
-/* ---------- Ответ ---------- */
-
-.faq__answer {
-  margin: 0;
-  padding: 10px 0 0;
-  border-top: 1px solid var(--color-border);
-  font-family: var(--font-primary);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.3;
-  letter-spacing: -0.05em;
-  color: var(--color-text);
-}
-
-.faq__answer p {
-  margin: 0 0 12px;
-}
-
-.faq__answer p:last-child {
-  margin-bottom: 0;
-}
-
-.faq__answer ul,
-.faq__answer ol {
-  margin: 0 0 12px;
-  padding-left: 22px;
-}
-
-.faq__answer a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-/* ---------- Адаптив ---------- */
 
 @media (max-width: 1023px) {
   .faq {
@@ -227,35 +99,5 @@
 
   .faq__list {
     gap: 8px;
-  }
-
-  .faq__details:not([open]) {
-    padding: 20px;
-  }
-
-  .faq__details[open] {
-    padding: 20px;
-    gap: 10px;
-  }
-
-  .faq__summary {
-    gap: 12px;
-  }
-
-  .faq__details:not([open]) .faq__question {
-    font-size: 14px;
-    line-height: 1.219;
-  }
-
-  .faq__details[open] .faq__question {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  .faq__answer {
-    padding-top: 10px;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: -0.04em;
   }
 }

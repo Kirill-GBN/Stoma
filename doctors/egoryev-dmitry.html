@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Егорьев Дмитрий Павлович | Даймонд</title>
+    <meta name="description" content="Стоматолог-ортопед Егорьев Дмитрий Павлович — стаж, образование, сертификаты и отзывы пациентов. Запишитесь на приём в центре Даймонд.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components/breadcrumbs.css">
+    <link rel="stylesheet" href="../css/components/accordion.css">
+    <link rel="stylesheet" href="../css/blocks/header.css">
+    <link rel="stylesheet" href="../css/blocks/mega-menu.css">
+    <link rel="stylesheet" href="../css/blocks/promo.css">
+    <link rel="stylesheet" href="../css/blocks/section-nav.css">
+    <link rel="stylesheet" href="../css/blocks/doctor-page.css">
+    <link rel="stylesheet" href="../css/blocks/doctor-hero.css">
+    <link rel="stylesheet" href="../css/blocks/doctor-about.css">
+    <link rel="stylesheet" href="../css/blocks/certificates-slider.css">
+    <link rel="stylesheet" href="../css/blocks/review-card.css">
+    <link rel="stylesheet" href="../css/blocks/reviews.css">
+    <link rel="stylesheet" href="../css/blocks/doctor-card.css">
+    <link rel="stylesheet" href="../css/blocks/our-doctors.css">
+    <link rel="stylesheet" href="../css/blocks/footer.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-inner">
+          <div class="header__top-left">
+            <a class="header__logo" href="/" aria-label="Даймонд, перейти на главную">
+              <img class="header__logo-image" src="../assets/icons/logo.svg" width="168" height="50" alt="Даймонд стоматологический центр">
+            </a>
+
+            <address class="header__address">
+              <img class="header__icon" src="../assets/icons/icon-pin.svg" width="18" height="18" alt="" aria-hidden="true">
+              <span>г. Красногорск, Ильинский<br>бульвар, 2 | м. Мякинино</span>
+            </address>
+          </div>
+
+          <div class="header__top-right">
+            <div class="header__contacts">
+              <a class="header__phone" href="tel:+74991107719">
+                <img class="header__icon" src="../assets/icons/icon-phone.svg" width="18" height="18" alt="" aria-hidden="true">
+                <span>+7 499 110-77-19</span>
+              </a>
+              <span class="header__schedule">Ежедневно с 9:00 до 20:00</span>
+            </div>
+
+            <button class="header__burger" type="button" aria-expanded="false" aria-controls="header-menu" aria-label="Открыть меню">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+
+            <div class="header__actions">
+              <a class="button button--outline" href="#accessibility">Версия для слабовидящих</a>
+              <a class="button button--primary" href="#appointment">Записаться на прием</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__bottom-inner" data-mega-menu-anchor>
+          <nav class="header__nav" aria-label="Главная навигация">
+            <ul class="header__nav-list">
+              <li class="header__nav-item header__nav-item--has-mega">
+                <button
+                  class="header__nav-link header__nav-link--toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="mega-menu-services"
+                  data-mega-menu-trigger
+                >
+                  Услуги
+                  <span class="header__nav-chevron" aria-hidden="true">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+
+                <!-- WP: таксономия service_category + CPT service; Options: mega_menu_promo -->
+                <div class="mega-menu" id="mega-menu-services" hidden data-mega-menu-panel data-state="closed">
+                  <div class="mega-menu__inner">
+                    <!-- ACF/WP: get_terms('service_category') -->
+                    <ul class="mega-menu__categories" role="tablist" aria-label="Категории услуг">
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-implantation"
+                          class="mega-menu__category is-active"
+                          type="button"
+                          role="tab"
+                          aria-selected="true"
+                          aria-controls="mega-cat-implantation"
+                          tabindex="0"
+                          data-target="implantation"
+                        >
+                          Имплантация зубов
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-prosthetics"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-prosthetics"
+                          tabindex="-1"
+                          data-target="prosthetics"
+                        >
+                          Протезы на имплантах
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-treatment"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-treatment"
+                          tabindex="-1"
+                          data-target="treatment"
+                        >
+                          Лечение зубов
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-surgery"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-surgery"
+                          tabindex="-1"
+                          data-target="surgery"
+                        >
+                          Хирургия
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-orthodontics"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-orthodontics"
+                          tabindex="-1"
+                          data-target="orthodontics"
+                        >
+                          Ортодонтия
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-gums"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-gums"
+                          tabindex="-1"
+                          data-target="gums"
+                        >
+                          Лечение дёсен
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-hygiene"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-hygiene"
+                          tabindex="-1"
+                          data-target="hygiene"
+                        >
+                          Гигиена и отбеливание
+                        </button>
+                      </li>
+                      <li class="mega-menu__categories-item">
+                        <button
+                          id="mega-tab-pediatric"
+                          class="mega-menu__category"
+                          type="button"
+                          role="tab"
+                          aria-selected="false"
+                          aria-controls="mega-cat-pediatric"
+                          tabindex="-1"
+                          data-target="pediatric"
+                        >
+                          Детская стоматология
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="mega-menu__content">
+                      <section
+                        class="mega-menu__category-content is-active"
+                        id="mega-cat-implantation"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-implantation"
+                        data-category="implantation"
+                      >
+                        <h3 class="mega-menu__category-title">Имплантация зубов</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="../services/implantation-turnkey.html">Имплантация зубов под ключ</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Виды имплантации</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="../services/odnomomentnaya-implantatsiya.html">Одномоментная имплантация</a></li>
+                              <li><a href="/services/one-stage">Одноэтапная имплантация</a></li>
+                              <li><a href="/services/two-stage">Двухэтапная имплантация</a></li>
+                              <li><a href="/services/no-bone-graft">Имплантация без костной пластики</a></li>
+                              <li><a href="/services/zygomatic">Скуловая имплантация</a></li>
+                              <li><a href="/services/transnasal">Трансназальная имплантация</a></li>
+                              <li><a href="/services/malocclusion">При неправильном прикусе</a></li>
+                              <li><a href="/services/gentle">Бережная имплантация</a></li>
+                              <li><a href="/services/wisdom-tooth">Пересадка зуба мудрости</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/implantation-installment">Имплантация в рассрочку</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">При недостатке кости или десны</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/bone-graft">Костная пластика</a></li>
+                              <li><a href="/services/sinus-lift">Синус-лифтинг</a></li>
+                              <li><a href="/services/gum-graft">Наращивание десны</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-prosthetics"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-prosthetics"
+                        hidden
+                        data-category="prosthetics"
+                      >
+                        <h3 class="mega-menu__category-title">Протезы на имплантах</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/fixed-on-implants">Несъёмное протезирование</a></li>
+                              <li><a href="/services/removable-on-implants">Съёмный протез на имплантах</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Решения по объёму дефекта</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/single-crown-implant">Коронка на импланте</a></li>
+                              <li><a href="/services/bridge-on-implants">Мост на имплантах</a></li>
+                              <li><a href="/services/full-arch-fixed">Полное восстановление ряда</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Материалы и этапы</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/zirconia-prosthesis">Циркониевые конструкции</a></li>
+                              <li><a href="/services/acrylic-base">Пластиночное базисное решение</a></li>
+                              <li><a href="/services/fitting-adjustment">Примерка и фиксация</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-treatment"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-treatment"
+                        hidden
+                        data-category="treatment"
+                      >
+                        <h3 class="mega-menu__category-title">Лечение зубов</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/examination-plan">Осмотр и план лечения</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Терапия</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/caries-treatment">Лечение кариеса</a></li>
+                              <li><a href="/services/endodontics">Эндодонтическое лечение</a></li>
+                              <li><a href="/services/aesthetic-restoration">Эстетическая реставрация</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Диагностика и профилактика</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/diagnocat-review">Разбор диагностики Diagnocat</a></li>
+                              <li><a href="/services/reminearalization">Реминерализация эмали</a></li>
+                              <li><a href="/services/sensitivity-treatment">Чувствительность зубов</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-surgery"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-surgery"
+                        hidden
+                        data-category="surgery"
+                      >
+                        <h3 class="mega-menu__category-title">Хирургия</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/tooth-extraction">Удаление зубов</a></li>
+                              <li><a href="/services/complex-extraction">Сложное удаление</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Подготовка к протезированию</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/alveoplasty">Альвеолярная пластика</a></li>
+                              <li><a href="/services/exposure-fangs">Хирургическое обнажение клыков</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Мягкие ткани</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/frenectomy">Френулотомия</a></li>
+                              <li><a href="/services/cyst-removal">Удаление кисты</a></li>
+                              <li><a href="/services/implant-stage-opening">Вскрытие импланта</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-orthodontics"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-orthodontics"
+                        hidden
+                        data-category="orthodontics"
+                      >
+                        <h3 class="mega-menu__category-title">Ортодонтия</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/bite-consult">Консультация ортодонта</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Типы аппаратов</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/braces-metal">Брекеты металлические</a></li>
+                              <li><a href="/services/braces-ceramic">Брекеты керамические</a></li>
+                              <li><a href="/services/aligners">Элайнеры</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Этапы лечения</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/treatment-plan-ortho">Планирование лечения</a></li>
+                              <li><a href="/services/retention">Ретенционный период</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-gums"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-gums"
+                        hidden
+                        data-category="gums"
+                      >
+                        <h3 class="mega-menu__category-title">Лечение дёсен</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/periodontist-consult">Приём периодонтолога</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Терапия пародонта</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/scaling-root-planning">Профессиональная гигиена пародонта</a></li>
+                              <li><a href="/services/periodontitis-treatment">Лечение пародонтита</a></li>
+                              <li><a href="/services/gingivitis-treatment">Лечение гингивита</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Хирургический профиль</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/open-curettage">Открытый кюретаж</a></li>
+                              <li><a href="/services/perio-plastic">Пародонтологическая пластика</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-hygiene"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-hygiene"
+                        hidden
+                        data-category="hygiene"
+                      >
+                        <h3 class="mega-menu__category-title">Гигиена и отбеливание</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/hygiene-package">Комплексная гигиена</a></li>
+                              <li><a href="/services/air-flow-clean">Чистка Air Flow</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Отбеливание</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/office-whitening">Кабинетное отбеливание</a></li>
+                              <li><a href="/services/home-whitening-kit">Домашнее отбеливание по капам</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Дополнительно</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/reminearalization-care">Уход после процедур</a></li>
+                              <li><a href="/services/plaque-indicator">Индикация налёта</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="mega-menu__category-content"
+                        id="mega-cat-pediatric"
+                        role="tabpanel"
+                        aria-labelledby="mega-tab-pediatric"
+                        hidden
+                        data-category="pediatric"
+                      >
+                        <h3 class="mega-menu__category-title">Детская стоматология</h3>
+                        <div class="mega-menu__columns">
+                          <div class="mega-menu__column">
+                            <ul class="mega-menu__list mega-menu__list--primary">
+                              <li><a href="/services/kids-first-visit">Первый визит ребёнка</a></li>
+                            </ul>
+                            <h4 class="mega-menu__subtitle">Лечение молочных зубов</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/kids-filling">Лечение кариеса у детей</a></li>
+                              <li><a href="/services/kids-sealants">Герметизация фиссур</a></li>
+                              <li><a href="/services/kids-extraction-milk">Удаление молочного зуба</a></li>
+                            </ul>
+                          </div>
+                          <div class="mega-menu__column">
+                            <h4 class="mega-menu__subtitle">Профилактика и гигиена</h4>
+                            <ul class="mega-menu__list">
+                              <li><a href="/services/kids-hygiene">Профессиональная гигиена для детей</a></li>
+                              <li><a href="/services/kids-flouride">Фторирование эмали</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+
+                    <!-- ACF Options: mega_menu_promo -->
+                    <aside class="mega-menu__promo promo-card" aria-label="Текущая акция">
+                      <article class="promo-card__article">
+                        <div class="promo-card__media">
+                          <img class="promo-card__image" src="../assets/images/mega-menu-promo.jpg" width="800" height="440" alt="" loading="lazy">
+                          <span class="promo-card__badge promo-card__badge--time">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/>
+                              <path d="M10 5.8V10l3 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Осталось 6 д.</span>
+                          </span>
+                          <span class="promo-card__badge promo-card__badge--discount">−40%</span>
+                        </div>
+                        <div class="promo-card__body">
+                          <h3 class="promo-card__title">Профессиональная чистка зубов</h3>
+                          <p class="promo-card__desc">Ультразвуковая чистка + Air Flow + полировка эмали</p>
+                          <p class="promo-card__price">
+                            <span class="promo-card__price-current">2 500 ₽</span>
+                            <span class="promo-card__price-old">4 200 ₽</span>
+                          </p>
+                          <a class="promo-card__cta button button--outline button--with-arrow" href="#appointment">
+                            <span>Записаться</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </article>
+                    </aside>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#clinic">О клинике</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="vrachi.html">Врачи</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#offers">Акции</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#prices">Цены</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#reviews">Отзывы</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a class="header__promo header__promo--desktop" href="#implant">Имплантация за 3750 ₽/мес.</a>
+          <a class="header__promo header__promo--mobile" href="#implant">Имплант за 3750₽/мес.</a>
+          <a class="button button--primary header__mobile-appointment" href="#appointment">Записаться на прием</a>
+        </div>
+      </div>
+
+      <div class="header__menu" id="header-menu" aria-hidden="true">
+        <div class="header__menu-panel" role="dialog" aria-modal="true" aria-label="Меню сайта">
+          <div class="header__menu-head">
+            <img class="header__menu-logo" src="../assets/icons/logo.svg" width="120" height="36" alt="Даймонд стоматологический центр">
+            <button class="header__menu-close" type="button" aria-label="Закрыть меню">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <nav class="header__menu-nav" aria-label="Мобильная навигация">
+            <ul class="header__menu-list">
+              <li class="header__menu-item header__menu-item--has-children">
+                <button
+                  class="header__menu-link header__menu-link--toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="mobile-services-list"
+                  data-mobile-services-trigger
+                >
+                  Услуги
+                  <span class="header__menu-chevron" aria-hidden="true">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="header__submenu" id="mobile-services-list" hidden>
+                  <li><a class="header__submenu-link" href="/services/category/implantation">Имплантация зубов</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/prosthetics">Протезы на имплантах</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/treatment">Лечение зубов</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/surgery">Хирургия</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/orthodontics">Ортодонтия</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/gums">Лечение дёсен</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/hygiene">Гигиена и отбеливание</a></li>
+                  <li><a class="header__submenu-link" href="/services/category/pediatric">Детская стоматология</a></li>
+                </ul>
+              </li>
+              <li><a class="header__menu-link" href="#clinic">О клинике</a></li>
+              <li><a class="header__menu-link" href="vrachi.html">Врачи</a></li>
+              <li><a class="header__menu-link" href="#offers">Акции</a></li>
+              <li><a class="header__menu-link" href="#prices">Цены</a></li>
+              <li><a class="header__menu-link" href="#reviews">Отзывы</a></li>
+              <li><a class="header__menu-link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <address class="header__menu-address">
+            <img class="header__icon" src="../assets/icons/icon-pin.svg" width="18" height="18" alt="" aria-hidden="true">
+            <span>г. Красногорск, Ильинский бульвар, 2 | м. Мякинино</span>
+          </address>
+
+          <a class="button button--outline header__menu-accessibility" href="#accessibility">Версия для слабовидящих</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <nav class="c-breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="c-breadcrumbs__list">
+          <li class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__link" href="/">Главная</a>
+            <span class="c-breadcrumbs__separator" aria-hidden="true">/</span>
+          </li>
+          <li class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__link" href="vrachi.html">Врачи</a>
+            <span class="c-breadcrumbs__separator" aria-hidden="true">/</span>
+          </li>
+          <li class="c-breadcrumbs__item" aria-current="page">
+            <span class="c-breadcrumbs__current">Егорьев Дмитрий Павлович</span>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- ACF: doctor_hero_block -->
+      <section class="doctor-hero" aria-labelledby="doctor-hero-name">
+        <div class="doctor-hero__inner">
+          <div class="doctor-hero__content">
+            <!-- ACF: doctor_name -->
+            <h1 class="doctor-hero__name" id="doctor-hero-name">
+              <span class="doctor-hero__lastname">Егорьев</span>
+              <span class="doctor-hero__firstname">Дмитрий Павлович</span>
+            </h1>
+
+            <!-- ACF: doctor_role -->
+            <p class="doctor-hero__role">Стоматолог-ортопед.</p>
+
+            <!-- ACF: doctor_qualities (Repeater) -->
+            <ul class="doctor-hero__qualities">
+              <li class="doctor-hero__quality">
+                <span class="doctor-hero__quality-marker" aria-hidden="true">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.25L3.5 6.75L9 1.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>Интеллигентное обаяние и отзывчивость</span>
+              </li>
+              <li class="doctor-hero__quality">
+                <span class="doctor-hero__quality-marker" aria-hidden="true">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.25L3.5 6.75L9 1.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>Эксперт по имплантации под наркозом и седацией</span>
+              </li>
+              <li class="doctor-hero__quality">
+                <span class="doctor-hero__quality-marker" aria-hidden="true">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.25L3.5 6.75L9 1.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>Найдёт грамотный выход из любой ситуации</span>
+              </li>
+            </ul>
+
+            <!-- ACF: doctor_hero_button (Group: text + url) -->
+            <a class="doctor-hero__button button button--accent button--with-arrow" href="../index.html#appointment">
+              <span>Записаться на приём</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="doctor-hero__media">
+            <!-- ACF: doctor_hero_photo (Image) -->
+            <img class="doctor-hero__photo" src="../assets/images/doctors/egoryev-dmitry/hero-bg.png" alt="Егорьев Дмитрий Павлович — стоматолог-ортопед" width="600" height="523" loading="eager">
+
+            <!-- ACF: doctor_experience (Group: years_label + years_value) -->
+            <div class="doctor-hero__experience">
+              <p class="doctor-hero__experience-label">Стаж с 2012 года.</p>
+              <p class="doctor-hero__experience-value">14 лет</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="section-nav" aria-label="Навигация по разделам страницы">
+        <div class="section-nav__inner">
+          <ul class="section-nav__list">
+            <li class="section-nav__item">
+              <a class="section-nav__link is-active" href="#about" data-section-link="about" aria-current="location">О враче</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#certificates" data-section-link="certificates">Сертификаты</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#reviews" data-section-link="reviews">Отзывы</a>
+            </li>
+            <li class="section-nav__item">
+              <a class="section-nav__link" href="#team" data-section-link="team">Врачи</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="doctor-page">
+        <div class="doctor-page__inner">
+          <!-- ACF: doctor_about_block -->
+          <section class="doctor-about" id="about" aria-labelledby="doctor-about-title">
+            <div class="doctor-about__layout">
+              <div class="doctor-about__main">
+                <h2 class="doctor-about__title" id="doctor-about-title">О враче</h2>
+
+                <!-- ACF: doctor_about_intro -->
+                <p class="doctor-about__intro"><strong>Егорьев Дмитрий Павлович</strong> — стоматолог-ортопед.</p>
+
+                <h3 class="doctor-about__skills-title">Ключевые навыки</h3>
+
+                <!-- ACF: doctor_skills (Repeater) -->
+                <ul class="doctor-about__skills">
+                  <li>Протезирование на имплантах и собственных зубах: коронки, мосты, вкладки.</li>
+                  <li>Эстетические решения: виниры, люминиры, подбор оттенка под улыбку.</li>
+                  <li>Съёмное и несъёмное протезирование при частичном и полном отсутствии зубов.</li>
+                  <li>Работа с современными системами имплантов и мультиюнит-абатментами.</li>
+                  <li>Планирование окклюзии и согласование плана с хирургом/ортодонтом.</li>
+                  <li>Приём пациентов под седацией и сопровождение после сложных вмешательств.</li>
+                </ul>
+
+                <ul class="doctor-about__accordions">
+                  <li>
+                    <details class="c-accordion__item">
+                      <summary class="c-accordion__trigger">
+                        <span class="c-accordion__title">Образование и опыт</span>
+                        <span class="c-accordion__icon" aria-hidden="true">
+                          <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </summary>
+                      <div class="c-accordion__panel">
+                        <ul class="doctor-about__timeline">
+                          <li><span class="doctor-about__timeline-year">2011 г.</span> — Российский университет дружбы народов им. П. Лумумбы (РУДН), стоматология.</li>
+                          <li><span class="doctor-about__timeline-year">2012 г.</span> — РУДН, стоматология общей практики.</li>
+                          <li><span class="doctor-about__timeline-year">2013 г.</span> — РУДН, стоматология ортопедическая.</li>
+                          <li><span class="doctor-about__timeline-year">2014 г.</span> — Участие в образовательных курсах по дентальной имплантации и ортопедии.</li>
+                        </ul>
+                      </div>
+                    </details>
+                  </li>
+
+                  <li>
+                    <details class="c-accordion__item">
+                      <summary class="c-accordion__trigger">
+                        <span class="c-accordion__title">Повышение квалификации</span>
+                        <span class="c-accordion__icon" aria-hidden="true">
+                          <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </summary>
+                      <div class="c-accordion__panel">
+                        <ul class="doctor-about__timeline">
+                          <li><span class="doctor-about__timeline-year">2015 г.</span> — Курс по протезированию на имплантах, работа с мультиюнит-конструкциями.</li>
+                          <li><span class="doctor-about__timeline-year">2017 г.</span> — Междисциплинарный семинар: согласованное планирование с ортодонтом и хирургом.</li>
+                          <li><span class="doctor-about__timeline-year">2019 г.</span> — Эстетическая ортопедия: виниры и полные реконструкции улыбки.</li>
+                          <li><span class="doctor-about__timeline-year">2022 г.</span> — Обновлённые протоколы несъёмного All-on-4 / All-on-6 на имплантах.</li>
+                        </ul>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+
+              <aside class="doctor-about__sidebar">
+                <div class="doctor-about__card">
+                  <!-- ACF: doctor_card_photo (Image) -->
+                  <img class="doctor-about__card-photo" src="../assets/images/doctors/egoryev-dmitry/photo-card.png" alt="" width="313" height="412" loading="lazy">
+                  <div class="doctor-about__card-content">
+                    <h3 class="doctor-about__card-name">Егорьев Дмитрий Павлович</h3>
+                    <p class="doctor-about__card-role">Стоматолог-ортопед</p>
+                    <a class="doctor-about__card-button button button--accent button--with-arrow" href="../index.html#appointment">
+                      <span>Записаться на приём</span>
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                        <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- ACF: certificates_block -->
+          <section class="certificates-slider" id="certificates" aria-labelledby="certificates-title">
+            <header class="certificates-slider__head">
+              <h2 class="certificates-slider__title" id="certificates-title">Сертификаты</h2>
+
+              <div class="certificates-slider__nav" role="group" aria-label="Навигация по сертификатам">
+                <button class="certificates-slider__nav-btn certificates-slider__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12 6 8l4-4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <span class="certificates-slider__counter" aria-live="polite">
+                  <span class="certificates-slider__counter-current">1</span>
+                  <span class="certificates-slider__counter-sep">/</span>
+                  <span class="certificates-slider__counter-total">2</span>
+                </span>
+                <button class="certificates-slider__nav-btn certificates-slider__nav-btn--next" type="button" aria-label="Следующий слайд">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 12 4-4-4-4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </header>
+
+            <div class="certificates-slider__slider swiper" data-certificates-slider>
+              <!-- ACF: doctor_certificates (Repeater of Image) -->
+              <ul class="certificates-slider__list swiper-wrapper">
+                <li class="certificates-slider__slide swiper-slide">
+                  <figure class="certificates-slider__item">
+                    <img src="../assets/images/doctors/egoryev-dmitry/cert-1.svg" alt="Сертификат 1" width="400" height="280" loading="lazy">
+                  </figure>
+                </li>
+                <li class="certificates-slider__slide swiper-slide">
+                  <figure class="certificates-slider__item">
+                    <img src="../assets/images/doctors/egoryev-dmitry/cert-2.svg" alt="Сертификат 2" width="400" height="280" loading="lazy">
+                  </figure>
+                </li>
+                <li class="certificates-slider__slide swiper-slide">
+                  <figure class="certificates-slider__item">
+                    <img src="../assets/images/doctors/egoryev-dmitry/cert-3.svg" alt="Сертификат 3" width="400" height="280" loading="lazy">
+                  </figure>
+                </li>
+                <li class="certificates-slider__slide swiper-slide">
+                  <figure class="certificates-slider__item">
+                    <img src="../assets/images/doctors/egoryev-dmitry/cert-4.svg" alt="Сертификат 4" width="400" height="280" loading="lazy">
+                  </figure>
+                </li>
+                <li class="certificates-slider__slide swiper-slide">
+                  <figure class="certificates-slider__item">
+                    <img src="../assets/images/doctors/egoryev-dmitry/cert-5.svg" alt="Сертификат 5" width="400" height="280" loading="lazy">
+                  </figure>
+                </li>
+                <li class="certificates-slider__slide swiper-slide">
+                  <figure class="certificates-slider__item">
+                    <img src="../assets/images/doctors/egoryev-dmitry/cert-6.svg" alt="Сертификат 6" width="400" height="280" loading="lazy">
+                  </figure>
+                </li>
+              </ul>
+
+              <div class="certificates-slider__pagination swiper-pagination" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <!-- ACF: reviews_block -->
+          <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+            <h2 class="reviews__title" id="reviews-title">Отзывы</h2>
+
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <article class="review-card">
+                  <div class="review-card__main">
+                    <h3 class="review-card__title">Протезирование прошло спокойно и предсказуемо</h3>
+                    <p class="review-card__text">Обратился к Дмитрию Павловичу по рекомендации. Долго откладывал визит, переживал за сроки и результат. Врач всё объяснил доступно, показал план, мы согласовали этапы. Сейчас доволен и прикусом, и внешним видом коронок.</p>
+                    <footer class="review-card__footer">
+                      <span class="review-card__author">Алексей В.</span>
+                      <span class="review-card__date">3 марта 2025</span>
+                    </footer>
+                  </div>
+                  <aside class="review-card__meta">
+                    <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                    </div>
+                    <div class="review-card__platform review-card__platform--yandex">
+                      <img src="../assets/icons/icon-yandex.svg" alt="" width="16" height="16">
+                      <span>Яндекс</span>
+                    </div>
+                  </aside>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review-card">
+                  <div class="review-card__main">
+                    <h3 class="review-card__title">Рекомендую специалиста</h3>
+                    <p class="review-card__text">Делала у Дмитрия Павловича коронки на передних зубах. Страшилась, что будет неестественно — результат аккуратный, цвет совпал с соседними зубами. Спасибо за терпение и консультации на каждом этапе.</p>
+                    <footer class="review-card__footer">
+                      <span class="review-card__author">Елена Т.</span>
+                      <span class="review-card__date">12 февраля 2025</span>
+                    </footer>
+                  </div>
+                  <aside class="review-card__meta">
+                    <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                    </div>
+                    <div class="review-card__platform review-card__platform--google">
+                      <img src="../assets/icons/icon-google.svg" alt="" width="16" height="16">
+                      <span>Google</span>
+                    </div>
+                  </aside>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review-card">
+                  <div class="review-card__main">
+                    <h3 class="review-card__title">Внимательный ортопед, грамотно подобрал конструкцию</h3>
+                    <p class="review-card__text">После имплантации нужно было финальное протезирование. Егорьев Д.П. подробно рассказал о вариантах материалов, помог выбрать оптимальный по бюджету и эстетике. Приём аккуратный, без спешки.</p>
+                    <footer class="review-card__footer">
+                      <span class="review-card__author">Марина С.</span>
+                      <span class="review-card__date">18 января 2025</span>
+                    </footer>
+                  </div>
+                  <aside class="review-card__meta">
+                    <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                      <svg class="review-card__star" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 0 8.5 4.5 13 5 9.5 8.5 10.5 13 7 10.5 3.5 13 4.5 8.5 1 5 5.5 4.5 7 0Z"/></svg>
+                    </div>
+                    <div class="review-card__platform review-card__platform--2gis">
+                      <img src="../assets/icons/icon-2gis.svg" alt="" width="16" height="16">
+                      <span>2ГИС</span>
+                    </div>
+                  </aside>
+                </article>
+              </li>
+            </ul>
+
+            <footer class="reviews__footer">
+              <!-- ACF: reviews pagination -->
+              <p class="reviews__counter">Показано 3 из 19</p>
+              <button class="reviews__more button button--outline" type="button">Показать ещё</button>
+            </footer>
+          </section>
+
+          <!-- ACF: our_doctors_block -->
+          <section class="our-doctors" id="team" aria-labelledby="our-doctors-title" data-our-doctors-config='{"mobile":{"slidesPerView":1,"gridRows":1,"spaceBetween":13},"desktop":{"slidesPerView":4,"spaceBetween":13}}'>
+            <header class="our-doctors__head">
+              <div class="our-doctors__heading">
+                <h2 class="our-doctors__title" id="our-doctors-title">Команда врачей</h2>
+                <p class="our-doctors__subtitle">нажмите, чтобы узнать подробнее</p>
+              </div>
+
+              <div class="our-doctors__nav" role="group" aria-label="Навигация по карточкам врачей">
+                <button class="our-doctors__nav-btn our-doctors__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12 6 8l4-4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <span class="our-doctors__counter" aria-live="polite">
+                  <span class="our-doctors__counter-current">1</span>
+                  <span class="our-doctors__counter-sep">/</span>
+                  <span class="our-doctors__counter-total">2</span>
+                </span>
+                <button class="our-doctors__nav-btn our-doctors__nav-btn--next" type="button" aria-label="Следующий слайд">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 12 4-4-4-4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </header>
+
+            <div class="our-doctors__slider-shell">
+              <div class="our-doctors__slider swiper">
+                <ul class="our-doctors__list swiper-wrapper">
+                  <li class="our-doctors__slide swiper-slide">
+                    <article class="doctor-card">
+                      <a class="doctor-card__link" href="mesropova-kristina-igorevna.html">
+                        <div class="doctor-card__photo">
+                          <img src="../assets/images/doctors/mesropova.png" alt="" width="293" height="284" loading="lazy">
+                        </div>
+                        <div class="doctor-card__body">
+                          <div class="doctor-card__credentials">
+                            <h3 class="doctor-card__name">Месропова Кристина Игоревна</h3>
+                            <p class="doctor-card__role">Главный врач, стоматолог терапевт-микроскопист К.М.Н.</p>
+                          </div>
+                          <span class="doctor-card__more" aria-hidden="true">
+                            <span>Подробнее</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li class="our-doctors__slide swiper-slide">
+                    <article class="doctor-card">
+                      <a class="doctor-card__link" href="egoryev-dmitry.html" aria-current="page">
+                        <div class="doctor-card__photo">
+                          <img src="../assets/images/doctors/egoryev.png" alt="" width="293" height="284" loading="lazy">
+                        </div>
+                        <div class="doctor-card__body">
+                          <div class="doctor-card__credentials">
+                            <h3 class="doctor-card__name">Егорьев Дмитрий Павлович</h3>
+                            <p class="doctor-card__role">Стоматолог-ортопед.</p>
+                          </div>
+                          <span class="doctor-card__more" aria-hidden="true">
+                            <span>Подробнее</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li class="our-doctors__slide swiper-slide">
+                    <article class="doctor-card">
+                      <a class="doctor-card__link" href="konovalova-ilnura-rafaelevna.html">
+                        <div class="doctor-card__photo">
+                          <img src="../assets/images/doctors/konovalova.png" alt="" width="293" height="284" loading="lazy">
+                        </div>
+                        <div class="doctor-card__body">
+                          <div class="doctor-card__credentials">
+                            <h3 class="doctor-card__name">Коновалова Ильнура Рафаэльевна</h3>
+                            <p class="doctor-card__role">Врач стоматолог-терапевт, специалист по отбеливанию зубов</p>
+                          </div>
+                          <span class="doctor-card__more" aria-hidden="true">
+                            <span>Подробнее</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li class="our-doctors__slide swiper-slide">
+                    <article class="doctor-card">
+                      <a class="doctor-card__link" href="mogilyanskaya-nataliya-yurevna.html">
+                        <div class="doctor-card__photo">
+                          <img src="../assets/images/doctors/mogilyanskaya.png" alt="" width="293" height="284" loading="lazy">
+                        </div>
+                        <div class="doctor-card__body">
+                          <div class="doctor-card__credentials">
+                            <h3 class="doctor-card__name">Могилянская Наталия Юрьевна</h3>
+                            <p class="doctor-card__role">Стоматолог-терапевт-эндодонтист</p>
+                          </div>
+                          <span class="doctor-card__more" aria-hidden="true">
+                            <span>Подробнее</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                              <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                </ul>
+
+                <div class="our-doctors__pagination swiper-pagination" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="our-doctors__cta">
+              <a class="our-doctors__button" href="vrachi.html">
+                <span>Все врачи</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                  <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- ACF Options: clinic_address_full, clinic_metro, clinic_phone_main, clinic_schedule_short, clinic_socials -->
+    <!-- ACF Options: legal_company_name, legal_inn, legal_license_short, legal_license_full, legal_copyright_template -->
+    <!-- WP menus: footer-services, footer-info -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <a class="footer__logo" href="/" aria-label="Даймонд, перейти на главную">
+              <img src="../assets/icons/logo-white.svg" width="140" height="41" alt="Даймонд стоматологический центр">
+            </a>
+
+            <ul class="footer__socials" aria-label="Связаться в мессенджерах">
+              <li>
+                <a class="footer__social-link" href="https://wa.me/79309287387" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+                  <img src="../assets/icons/icon-footer-chat.svg" width="13" height="13" alt="" aria-hidden="true">
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="https://t.me/diamond_clinic" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+                  <img src="../assets/icons/icon-footer-telegram.svg" width="13" height="13" alt="" aria-hidden="true">
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="tel:+79309287387" aria-label="Позвонить в клинику">
+                  <img src="../assets/icons/icon-footer-phone-social.svg" width="13" height="13" alt="" aria-hidden="true">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="footer__nav footer__nav--services" aria-label="Услуги">
+            <h2 class="footer__nav-title">Услуги</h2>
+            <ul class="footer__nav-list">
+              <li><a href="/services/implantation">Имплантация зубов</a></li>
+              <li><a href="/services/implant-prosthetics">Протезы на имплантах</a></li>
+              <li><a href="/services/all-on-4-6">All-on-4 / All-on-6</a></li>
+              <li><a href="/services/prosthetics">Протезирование зубов</a></li>
+              <li><a href="/services/treatment">Лечение зубов</a></li>
+              <li><a href="/services/surgery">Хирургия</a></li>
+              <li><a href="/services/orthodontics">Ортодонтия</a></li>
+              <li><a href="/services/pediatric">Детская стоматология</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav footer__nav--info" aria-label="Информация о клинике">
+            <h2 class="footer__nav-title">Информация</h2>
+            <ul class="footer__nav-list">
+              <li><a href="/about">О клинике</a></li>
+              <li><a href="/doctors">Врачи</a></li>
+              <li><a href="/prices">Цены</a></li>
+              <li><a href="/reviews">Отзывы</a></li>
+              <li><a href="/blog">Блог</a></li>
+              <li><a href="/promo">Акции</a></li>
+              <li><a href="/contacts">Контакты</a></li>
+              <li><a href="/privacy">Политика конфиденциальности</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer__contacts" aria-label="Контакты клиники">
+            <h2 class="footer__nav-title">Контакты</h2>
+            <ul class="footer__contacts-list">
+              <li>
+                <a class="footer__contact-link" href="https://yandex.ru/maps/-/CDQjUL0c" target="_blank" rel="noopener">
+                  <span class="footer__contact-icon" aria-hidden="true">
+                    <img src="../assets/icons/icon-footer-pin.svg" width="14" height="14" alt="">
+                  </span>
+                  <span>г. Красногорск, Ильинский бульвар, 2 | м. Мякинино</span>
+                </a>
+              </li>
+              <li>
+                <a class="footer__contact-link" href="tel:+79309287387">
+                  <span class="footer__contact-icon" aria-hidden="true">
+                    <img src="../assets/icons/icon-footer-phone.svg" width="14" height="14" alt="">
+                  </span>
+                  <span>+7 (930) 928-73-87</span>
+                </a>
+              </li>
+              <li>
+                <span class="footer__contact-link footer__contact-link--static">
+                  <span class="footer__contact-icon" aria-hidden="true">
+                    <img src="../assets/icons/icon-footer-clock.svg" width="14" height="14" alt="">
+                  </span>
+                  <span>Ежедневно 9:00-20:00</span>
+                </span>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © <span data-current-year>2026</span> Даймонд. Лицензия: ЛО-50-01-002649. ИНН 5024216752
+          </p>
+          <p class="footer__legal">
+            Лицензия № ЛО-50-01-002649 от 15.01.2020
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/section-nav.js"></script>
+    <script src="../js/blocks/our-doctors.js"></script>
+    <script src="../js/blocks/certificates-slider.js"></script>
+  </body>
+</html>

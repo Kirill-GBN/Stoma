@@ -1,0 +1,258 @@
+/* Hero карточки врача (страница врача). Токены: Framelink 216:11007 (десктоп), 216:14230 (мобилка). */
+
+.doctor-hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+  background: var(--color-bg);
+}
+
+.doctor-hero__inner {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: stretch;
+  gap: 32px;
+  width: min(100%, var(--container-max));
+  min-height: 523px;
+  padding: 40px 48px 0;
+  border-radius: 13px;
+  border: 1px solid rgb(19 61 141 / 10%);
+  background: linear-gradient(
+    135deg,
+    rgb(240 235 248) 0%,
+    rgb(238 242 255) 60%,
+    rgb(232 238 248) 100%
+  );
+}
+
+.doctor-hero__content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  align-self: center;
+  padding-bottom: 40px;
+}
+
+.doctor-hero__name {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.doctor-hero__role {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: var(--color-primary);
+}
+
+.doctor-hero__qualities {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doctor-hero__quality {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.625;
+  letter-spacing: -0.01em;
+  color: #3d4a6b;
+}
+
+.doctor-hero__quality-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c2477a;
+  color: var(--color-bg);
+}
+
+.doctor-hero__quality-marker svg {
+  display: block;
+}
+
+.doctor-hero__media {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: stretch;
+  min-height: 0;
+}
+
+.doctor-hero__photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+.doctor-hero__experience {
+  position: absolute;
+  right: 36px;
+  bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: min(100%, 212px);
+  padding: 20px 30px;
+  border-radius: 13px;
+  background: var(--color-bg);
+  border: 1px solid rgb(19 61 141 / 10%);
+  box-shadow:
+    0 1px 2px -1px rgb(0 0 0 / 10%),
+    0 1px 3px 0 rgb(0 0 0 / 10%);
+  text-align: center;
+}
+
+.doctor-hero__experience-label {
+  margin: 0;
+  max-width: 203px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  text-align: center;
+  color: #171717;
+}
+
+.doctor-hero__experience-value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: #cf5093;
+}
+
+@media (max-width: 1023px) {
+  .doctor-hero__inner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 32px 24px 0;
+    text-align: center;
+  }
+
+  .doctor-hero__content {
+    order: 2;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+
+  .doctor-hero__media {
+    order: 1;
+    justify-content: center;
+    min-height: 280px;
+  }
+
+  .doctor-hero__qualities {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .doctor-hero__experience {
+    right: 16px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctor-hero {
+    padding-inline: var(--container-padding-mobile-fluid);
+  }
+
+  .doctor-hero__inner {
+    padding: 24px 16px 0;
+  }
+
+  .doctor-hero__content {
+    padding-bottom: 24px;
+  }
+
+  .doctor-hero__name {
+    font-size: 22px;
+  }
+
+  .doctor-hero__button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Моб. hero: Framelink 216:14306 — контейнер фото height 300; 216:14307 — изображение 344×300 (fill); плашка 216:14308 — x 173.19, y 200, 155×77 */
+  .doctor-hero__media {
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 13px 13px 0 0;
+  }
+
+  .doctor-hero__photo {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    min-height: 0;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  /* Плашка: gap 6px; порядок «14 лет» сверху — column-reverse; прижата вправо и к низу зоны фото (нижняя треть). */
+  .doctor-hero__experience {
+    left: auto;
+    right: 15px;
+    bottom: 23px;
+    transform: none;
+    flex-direction: column-reverse;
+    gap: 6px;
+    width: 155px;
+    max-width: calc(100% - 32px);
+    padding: 12px 14px;
+  }
+
+  .doctor-hero__experience-label {
+    max-width: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.219;
+  }
+
+  .doctor-hero__experience-value {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.219;
+  }
+}

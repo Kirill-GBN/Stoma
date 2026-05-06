@@ -1,0 +1,57 @@
+/* Секция отзывов. */
+
+.reviews {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 60px 62px;
+  border-radius: var(--radius-m);
+  background: var(--color-doctors-bg);
+}
+
+.reviews__title {
+  margin: 0 0 28px;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.219;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.reviews__counter {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    padding: 30px 16px;
+  }
+
+  .reviews__title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

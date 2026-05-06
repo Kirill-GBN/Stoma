@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/blocks/header.css">
     <link rel="stylesheet" href="css/blocks/mega-menu.css">
     <link rel="stylesheet" href="css/blocks/hero.css">
+    <link rel="stylesheet" href="css/blocks/service-hero.css">
     <link rel="stylesheet" href="css/blocks/stats.css">
     <link rel="stylesheet" href="css/blocks/doctors.css">
     <link rel="stylesheet" href="css/blocks/finance.css">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="css/blocks/license.css">
     <link rel="stylesheet" href="css/blocks/promo.css">
     <link rel="stylesheet" href="css/blocks/rating.css">
+    <link rel="stylesheet" href="css/components/accordion.css">
     <link rel="stylesheet" href="css/blocks/faq.css">
     <link rel="stylesheet" href="css/blocks/services.css">
     <link rel="stylesheet" href="css/blocks/transformations.css">
@@ -597,6 +599,13 @@
             <div class="hero__appointment">
               <span class="hero__appointment-label">Ближайшее время записи на консультацию:</span>
               <time class="hero__appointment-value" datetime="2026-02-20T08:00">Завтра, 20 февраля, в 8:00</time>
+              <a class="service-hero__cta button button--accent button--with-arrow" href="#appointment">
+                <span>Записаться на приём</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.916 7h8.168" stroke="currentColor" stroke-width="1.166" stroke-linecap="round"/>
+                  <path d="M7 2.916 11.084 7 7 11.084" stroke="currentColor" stroke-width="1.166" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -1346,16 +1355,16 @@
           <ul class="faq__list">
             <!-- ACF: faq_items > item 1 -->
             <li class="faq__item">
-              <details class="faq__details" name="faq" open>
-                <summary class="faq__summary">
-                  <span class="faq__question"><!-- question -->Больно ли делать имплантацию?</span>
-                  <span class="faq__icon" aria-hidden="true">
+              <details class="c-accordion__item" name="faq" open>
+                <summary class="c-accordion__trigger">
+                  <span class="c-accordion__title"><!-- question -->Больно ли делать имплантацию?</span>
+                  <span class="c-accordion__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                 </summary>
-                <div class="faq__answer">
+                <div class="c-accordion__panel">
                   <!-- answer (Wysiwyg) -->
                   <p>Нет. Операция проводится под местной анестезией — пациент не чувствует боли. Некоторые ощущают лёгкое давление. После операции могут быть умеренный дискомфорт и отёк в течение 2–4 дней, которые снимаются стандартными обезболивающими. По желанию возможна седация.</p>
                 </div>
@@ -1364,16 +1373,16 @@
 
             <!-- ACF: faq_items > item 2 -->
             <li class="faq__item">
-              <details class="faq__details" name="faq">
-                <summary class="faq__summary">
-                  <span class="faq__question"><!-- question -->Сколько служит имплант?</span>
-                  <span class="faq__icon" aria-hidden="true">
+              <details class="c-accordion__item" name="faq">
+                <summary class="c-accordion__trigger">
+                  <span class="c-accordion__title"><!-- question -->Сколько служит имплант?</span>
+                  <span class="c-accordion__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                 </summary>
-                <div class="faq__answer">
+                <div class="c-accordion__panel">
                   <!-- answer (Wysiwyg) -->
                   <p>При правильной установке, регулярной гигиене и профилактических осмотрах имплант может служить многие годы. Точный прогноз врач даст после диагностики и оценки состояния костной ткани.</p>
                 </div>
@@ -1382,16 +1391,16 @@
 
             <!-- ACF: faq_items > item 3 -->
             <li class="faq__item">
-              <details class="faq__details" name="faq">
-                <summary class="faq__summary">
-                  <span class="faq__question"><!-- question -->Можно ли оформить имплант в рассрочку?</span>
-                  <span class="faq__icon" aria-hidden="true">
+              <details class="c-accordion__item" name="faq">
+                <summary class="c-accordion__trigger">
+                  <span class="c-accordion__title"><!-- question -->Можно ли оформить имплант в рассрочку?</span>
+                  <span class="c-accordion__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                 </summary>
-                <div class="faq__answer">
+                <div class="c-accordion__panel">
                   <!-- answer (Wysiwyg) -->
                   <p>Да, лечение можно оплатить в рассрочку. Администратор расскажет о доступных вариантах и поможет подобрать удобный график платежей.</p>
                 </div>
@@ -1400,16 +1409,16 @@
 
             <!-- ACF: faq_items > item 4 -->
             <li class="faq__item">
-              <details class="faq__details" name="faq">
-                <summary class="faq__summary">
-                  <span class="faq__question"><!-- question -->Есть ли гарантия на имплантацию?</span>
-                  <span class="faq__icon" aria-hidden="true">
+              <details class="c-accordion__item" name="faq">
+                <summary class="c-accordion__trigger">
+                  <span class="c-accordion__title"><!-- question -->Есть ли гарантия на имплантацию?</span>
+                  <span class="c-accordion__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                 </summary>
-                <div class="faq__answer">
+                <div class="c-accordion__panel">
                   <!-- answer (Wysiwyg) -->
                   <p>Гарантийные условия зависят от выбранной системы имплантов и соблюдения рекомендаций врача. Все условия фиксируются в плане лечения до начала работ.</p>
                 </div>
@@ -1418,16 +1427,16 @@
 
             <!-- ACF: faq_items > item 5 -->
             <li class="faq__item">
-              <details class="faq__details" name="faq">
-                <summary class="faq__summary">
-                  <span class="faq__question"><!-- question -->Через сколько можно установить имплант после удаления зуба?</span>
-                  <span class="faq__icon" aria-hidden="true">
+              <details class="c-accordion__item" name="faq">
+                <summary class="c-accordion__trigger">
+                  <span class="c-accordion__title"><!-- question -->Через сколько можно установить имплант после удаления зуба?</span>
+                  <span class="c-accordion__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                 </summary>
-                <div class="faq__answer">
+                <div class="c-accordion__panel">
                   <!-- answer (Wysiwyg) -->
                   <p>Иногда имплант можно установить сразу после удаления зуба, но чаще требуется период заживления. Решение принимается после осмотра и 3D-диагностики.</p>
                 </div>
@@ -1436,16 +1445,16 @@
 
             <!-- ACF: faq_items > item 6 -->
             <li class="faq__item">
-              <details class="faq__details" name="faq">
-                <summary class="faq__summary">
-                  <span class="faq__question"><!-- question -->Сколько времени занимает лечение?</span>
-                  <span class="faq__icon" aria-hidden="true">
+              <details class="c-accordion__item" name="faq">
+                <summary class="c-accordion__trigger">
+                  <span class="c-accordion__title"><!-- question -->Сколько времени занимает лечение?</span>
+                  <span class="c-accordion__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 6.75 9 11.25l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                 </summary>
-                <div class="faq__answer">
+                <div class="c-accordion__panel">
                   <!-- answer (Wysiwyg) -->
                   <p>Сроки зависят от объёма лечения, необходимости костной пластики и выбранного протокола. После диагностики врач составит поэтапный план с ориентировочными датами.</p>
                 </div>
@@ -2044,6 +2053,7 @@
               <li><a href="/promo">Акции</a></li>
               <li><a href="/contacts">Контакты</a></li>
               <li><a href="/privacy">Политика конфиденциальности</a></li>
+              <li><a href="./documents.html">Документы</a></li>
             </ul>
           </nav>
 

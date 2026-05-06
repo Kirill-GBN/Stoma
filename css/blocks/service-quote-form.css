@@ -2,6 +2,10 @@
 
 .service-quote-form {
   box-sizing: border-box;
+  position: sticky;
+  top: var(--service-layout-sticky-top, calc(var(--header-height-sticky) + 12px));
+  align-self: flex-start;
+  z-index: 1;
   padding: 19px 15px 15px;
   border-radius: 24px;
   background: linear-gradient(

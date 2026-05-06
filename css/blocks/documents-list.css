@@ -1,0 +1,59 @@
+/* Черновые токены из ТЗ (Figma MCP — 403) */
+
+.documents-list {
+  margin: 0;
+  padding: 40px 62px;
+  border-radius: 13px;
+  background: var(--color-bg);
+  border: 1px solid rgb(28 45 107 / 8%);
+}
+
+.documents-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.documents-list__item {
+  margin: 0;
+}
+
+.documents-list__link {
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity 160ms ease;
+}
+
+.documents-list__link:hover {
+  opacity: 0.7;
+}
+
+.documents-list__link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .documents-list {
+    padding: 24px 16px;
+  }
+
+  .documents-list__items {
+    gap: 12px;
+  }
+
+  .documents-list__link {
+    font-size: 14px;
+  }
+}

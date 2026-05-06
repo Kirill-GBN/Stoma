@@ -1,0 +1,136 @@
+/* Карточка отзыва. Токены: Framelink node 216:11174. */
+
+.review-card {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: start;
+  margin: 0;
+  padding: 25px 28px;
+  border-radius: 14px;
+  background: var(--color-bg);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px -4px rgb(28 45 107 / 6%);
+}
+
+.review-card__main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.review-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.review-card__text {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.review-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.review-card__author {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.review-card__date {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.review-card__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.review-card__rating {
+  display: inline-flex;
+  gap: 2px;
+  color: #facc15;
+}
+
+.review-card__star {
+  display: block;
+  flex-shrink: 0;
+}
+
+.review-card__platform {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.review-card__platform img {
+  display: block;
+  flex-shrink: 0;
+}
+
+.review-card__platform--yandex {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.review-card__platform--google {
+  background: #f3f4f6;
+}
+
+.review-card__platform--2gis {
+  background: #ecfdf5;
+  color: #166534;
+}
+
+@media (max-width: 767px) {
+  .review-card {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+  }
+
+  .review-card__title {
+    font-size: 14px;
+  }
+
+  .review-card__text {
+    font-size: 14px;
+  }
+
+  .review-card__meta {
+    order: -1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}

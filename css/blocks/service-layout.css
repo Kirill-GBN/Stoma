@@ -42,11 +42,14 @@
 
 .service-layout__aside {
   min-width: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-layout__sticky {
-  position: sticky;
-  top: var(--service-layout-sticky-top);
+  flex: 1 1 auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;

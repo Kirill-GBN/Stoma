@@ -1,0 +1,88 @@
+.pricing-category {
+  scroll-margin-top: 120px;
+}
+
+.pricing-category__head {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+}
+
+.pricing-category__title {
+  margin: 0;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 3.2vw, 24px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.pricing-category__count {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+  letter-spacing: -0.04em;
+}
+
+.pricing-category__intro {
+  margin: 10px 0 0;
+  max-width: 720px;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+  letter-spacing: -0.04em;
+}
+
+.pricing-category__list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-category__list .price-card {
+  scroll-margin-top: 120px;
+}
+
+.prices-page {
+  padding-bottom: clamp(40px, 6vw, 72px);
+}
+
+.prices-page__inner > .prices-hero + .pricing-category {
+  margin-top: clamp(20px, 3vw, 28px);
+}
+
+.prices-page__inner > .pricing-category + .pricing-category {
+  margin-top: clamp(32px, 5vw, 48px);
+}
+
+.prices-page__inner > .prices-download {
+  margin-top: clamp(36px, 5vw, 52px);
+}
+
+
+@media (max-width: 1180px) {
+  .prices-page__inner {
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (max-width: 767px) {
+  .prices-page__inner {
+    padding-inline: var(--container-padding-mobile-fluid);
+  }
+
+  .pricing-category__head {
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .prices-page__inner {
+    padding-inline: var(--container-padding-mobile);
+  }
+}

@@ -16,6 +16,41 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
+  const defaults = {
+    mobile: { slidesPerView: 1, spaceBetween: 11, gridRows: 3 },
+    tablet: { slidesPerView: 2, spaceBetween: 13, gridRows: 1 },
+    desktop: { slidesPerView: 3, spaceBetween: 13, gridRows: 1 },
+  };
+
+  let config = {};
+  const configAttr = root.getAttribute("data-our-doctors-config");
+  if (configAttr) {
+    try {
+      config = JSON.parse(configAttr);
+    } catch (e) {
+      console.warn("[our-doctors] Invalid data-our-doctors-config", e);
+      config = {};
+    }
+  }
+
+  if (typeof config.slidesPerView === "number" && config.desktop == null) {
+    config = {
+      ...config,
+      desktop: {
+        slidesPerView: config.slidesPerView,
+        ...(typeof config.spaceBetween === "number" ? { spaceBetween: config.spaceBetween } : {}),
+      },
+    };
+  }
+
+  const mobile = { ...defaults.mobile, ...(config.mobile || {}) };
+  const tablet = { ...defaults.tablet, ...(config.tablet || {}) };
+  const desktop = { ...defaults.desktop, ...(config.desktop || {}) };
+
+  function slidesPerGroupFor(bp) {
+    return bp.slidesPerView * bp.gridRows;
+  }
+
   function updateCounter(s) {
     if (!s || !s.params) return;
     const perView = typeof s.params.slidesPerView === "number" ? s.params.slidesPerView : 1;
@@ -28,27 +63,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   new Swiper(sliderEl, {
-    slidesPerView: 1,
-    slidesPerGroup: 3,
-    spaceBetween: 11,
+    slidesPerView: mobile.slidesPerView,
+    slidesPerGroup: slidesPerGroupFor(mobile),
+    spaceBetween: mobile.spaceBetween,
     speed: 320,
     watchOverflow: true,
     grid: {
-      rows: 3,
+      rows: mobile.gridRows,
       fill: "row",
     },
     breakpoints: {
       768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 13,
-        grid: { rows: 1, fill: "row" },
+        slidesPerView: tablet.slidesPerView,
+        slidesPerGroup: slidesPerGroupFor(tablet),
+        spaceBetween: tablet.spaceBetween,
+        grid: { rows: tablet.gridRows, fill: "row" },
       },
       1024: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 13,
-        grid: { rows: 1, fill: "row" },
+        slidesPerView: desktop.slidesPerView,
+        slidesPerGroup: slidesPerGroupFor(desktop),
+        spaceBetween: desktop.spaceBetween,
+        grid: { rows: desktop.gridRows, fill: "row" },
       },
     },
     navigation: { prevEl: prevBtn, nextEl: nextBtn },
