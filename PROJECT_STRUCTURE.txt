@@ -1,0 +1,235 @@
+﻿Структура папок
+Серийный номер тома: 3049-725A
+D:.
+|   documents.html
+|   index.html
+|   prices.html
+|   
++---.cursor
+|   \---rules
+|           html-page-css-bundle.mdc
+|           
++---assets
+|   +---fonts
+|   |       inter-cyrillic.woff2
+|   |       inter-latin.woff2
+|   |       montserrat-600-cyrillic.woff2
+|   |       montserrat-600-latin.woff2
+|   |       
+|   +---icons
+|   |   |   icon-2gis.svg
+|   |   |   icon-arrow-right.svg
+|   |   |   icon-arrow-up-right.svg
+|   |   |   icon-check-circle.svg
+|   |   |   icon-check.svg
+|   |   |   icon-chevron-down.svg
+|   |   |   icon-compare-handle.svg
+|   |   |   icon-compare-hint.svg
+|   |   |   icon-footer-chat.svg
+|   |   |   icon-footer-clock.svg
+|   |   |   icon-footer-phone-social.svg
+|   |   |   icon-footer-phone.svg
+|   |   |   icon-footer-pin.svg
+|   |   |   icon-footer-telegram.svg
+|   |   |   icon-google.svg
+|   |   |   icon-map-chat.svg
+|   |   |   icon-map-mail.svg
+|   |   |   icon-map-pin.svg
+|   |   |   icon-map-telegram.svg
+|   |   |   icon-phone.svg
+|   |   |   icon-pin.svg
+|   |   |   icon-play-doctors.svg
+|   |   |   icon-play.svg
+|   |   |   icon-promo-arrow-right.svg
+|   |   |   icon-promo-chevron-left.svg
+|   |   |   icon-promo-chevron-right.svg
+|   |   |   icon-promo-clock.svg
+|   |   |   icon-rating-star.svg
+|   |   |   icon-shield.svg
+|   |   |   icon-star-pink.svg
+|   |   |   icon-star.svg
+|   |   |   icon-tooth.svg
+|   |   |   icon-yandex.svg
+|   |   |   logo-white.svg
+|   |   |   logo-yandex-maps.svg
+|   |   |   logo-yandex.svg
+|   |   |   logo.svg
+|   |   |   
+|   |   \---payment
+|   |           mastercard.svg
+|   |           mir.svg
+|   |           payment-methods.svg
+|   |           visa.svg
+|   |           
+|   \---images
+|       |   clinic-interior.jpg
+|       |   clinic-photo.jpg
+|       |   clinic-photo.png
+|       |   clinic-poster.png
+|       |   doctors-team.png
+|       |   free-consultation-photo.png
+|       |   hero-portrait.png
+|       |   mega-menu-promo.jpg
+|       |   
+|       +---cases
+|       |       case-all-on-4-after.png
+|       |       case-all-on-4-before.png
+|       |       
+|       +---doctors
+|       |   |   abyshova.png
+|       |   |   aivazova.png
+|       |   |   akhtanina.png
+|       |   |   amerhadzhiev.png
+|       |   |   egorev.jpg
+|       |   |   egoryev.png
+|       |   |   hametova.png
+|       |   |   konovalova.jpg
+|       |   |   konovalova.png
+|       |   |   mesropova.jpg
+|       |   |   mesropova.png
+|       |   |   mogilyanskaya.png
+|       |   |   
+|       |   \---egoryev-dmitry
+|       |           cert-1.svg
+|       |           cert-2.svg
+|       |           cert-3.svg
+|       |           cert-4.svg
+|       |           cert-5.svg
+|       |           cert-6.svg
+|       |           hero-bg.png
+|       |           photo-card.jpg
+|       |           photo-card.png
+|       |           photo-hero.png
+|       |           
+|       +---license
+|       |       license-1.png
+|       |       license-2.png
+|       |       license-3.png
+|       |       
+|       +---methods
+|       |       dvuhetapnaya.png
+|       |       odnoetapnaya.png
+|       |       odnomomentnaya.png
+|       |       
+|       +---promo
+|       |       promo-1.png
+|       |       promo-2.png
+|       |       promo-3.png
+|       |       promo-4.png
+|       |       promo-5.png
+|       |       promo-6.png
+|       |       
+|       +---prosthetics
+|       |       nesyomnoe.png
+|       |       uslovno-syomnoe.png
+|       |       
+|       +---services
+|       |       alternatives-classic-6b68ae.png
+|       |       Full_mascot_img.png
+|       |       implantation-turnkey-hero.jpg
+|       |       installment-mascot.png
+|       |       odnomomentnaya-hero.png
+|       |       odnomomentnaya-info.png
+|       |       what-is-implantation.jpg
+|       |       
+|       \---transformations
+|               avatar-1.jpg
+|               avatar-2.jpg
+|               case-1-after.jpg
+|               case-1-before.jpg
+|               case-2-after.jpg
+|               case-2-before.jpg
+|               case-composite.png
+|               
++---css
+|   |   base.css
+|   |   reset.css
+|   |   variables.css
+|   |   
+|   +---blocks
+|   |       case-card.css
+|   |       cases-slider.css
+|   |       certificates-slider.css
+|   |       clinical-cases.css
+|   |       complex-cases-tabs.css
+|   |       complex-cases.css
+|   |       consultation-form.css
+|   |       consultation.css
+|   |       contact-cta.css
+|   |       contraindications.css
+|   |       doctor-about.css
+|   |       doctor-card.css
+|   |       doctor-hero.css
+|   |       doctor-page.css
+|   |       doctor-row.css
+|   |       doctors-grid.css
+|   |       doctors-hero.css
+|   |       doctors.css
+|   |       documents-hero.css
+|   |       documents-list.css
+|   |       faq.css
+|   |       finance.css
+|   |       footer.css
+|   |       free-consultation.css
+|   |       header.css
+|   |       hero.css
+|   |       implant-brands.css
+|   |       implant-methods.css
+|   |       indications.css
+|   |       installment-promo.css
+|   |       license.css
+|   |       map.css
+|   |       mega-menu.css
+|   |       our-doctors.css
+|   |       prices-download.css
+|   |       prices-hero.css
+|   |       pricing-category.css
+|   |       pricing.css
+|   |       promo.css
+|   |       prosthetics-types.css
+|   |       rating.css
+|   |       review-card.css
+|   |       reviews.css
+|   |       section-nav.css
+|   |       service-hero.css
+|   |       service-info.css
+|   |       service-layout.css
+|   |       service-pricing.css
+|   |       service-quote-form.css
+|   |       services-aside.css
+|   |       services.css
+|   |       stats.css
+|   |       transformations.css
+|   |       treatment-stages.css
+|   |       warranty.css
+|   |       
+|   \---components
+|           accordion.css
+|           breadcrumbs.css
+|           info-panel.css
+|           tabs.css
+|           
++---doctors
+|       egoryev-dmitry.html
+|       vrachi.html
+|       
++---js
+|   |   header.js
+|   |   promo.js
+|   |   section-nav.js
+|   |   services-aside.js
+|   |   services.js
+|   |   transformations.js
+|   |   
+|   +---blocks
+|   |       cases-slider.js
+|   |       certificates-slider.js
+|   |       our-doctors.js
+|   |       
+|   \---lib
+|           tabs.js
+|           
+\---services
+        implantation-turnkey.html
+        odnomomentnaya-implantatsiya.html
+        

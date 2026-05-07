@@ -13,7 +13,7 @@
   align-items: stretch;
   gap: 80px;
   width: min(100%, var(--container-max));
-  min-height: 630px;
+  max-height: 630px;
   padding: 60px var(--container-padding-desktop);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-m);
